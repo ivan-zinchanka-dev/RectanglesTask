@@ -5,9 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Core.Models;
 using Newtonsoft.Json;
-using UnityEditor.VersionControl;
 using UnityEngine;
-using Task = System.Threading.Tasks.Task;
 
 namespace Core.Services
 {
@@ -52,7 +50,7 @@ namespace Core.Services
             File.WriteAllText(ExamplesFolderName + "examples.json", JsonConvert.SerializeObject(_examples, Formatting.Indented));*/
         }
 
-        public async Task<IEnumerable<Example>> ReadExamplesAsync()
+        public async Task<List<Example>> ReadExamplesAsync()
         {
             string fullExamplesFileName = Path.Combine(_examplesDirectory.FullName, ExamplesFileName);
             
@@ -65,7 +63,7 @@ namespace Core.Services
 
             _examples = JsonConvert.DeserializeObject<List<Example>>(jsonNotation);
 
-            return _examples.AsEnumerable();
+            return _examples;
         }
         
         /*private string GetFullFileName(string fileName)

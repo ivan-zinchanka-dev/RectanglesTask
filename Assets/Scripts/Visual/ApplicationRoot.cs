@@ -9,21 +9,18 @@ namespace Visual
     {
         [SerializeField] private Drawer _drawer;
         
-        private ExamplesDataService _examplesDataService = new ExamplesDataService(); 
+        private ExamplesDataService _examplesDataService = new ExamplesDataService();
+
+        private int _currentExampleIndex = 0;
         
         private async void Awake()
         {
             _examplesDataService = new ExamplesDataService();
 
-            IEnumerable<Example> examples = await _examplesDataService.ReadExamplesAsync();
-
-            foreach (var example in examples)
-            {
-                _drawer.DrawExample(example);
-            }
+            List<Example> examples = await _examplesDataService.ReadExamplesAsync();
             
-            
-            
+            _drawer.DrawExample(examples[_currentExampleIndex]);
+            _drawer.DrawExample(examples[_currentExampleIndex].Resolve(), true);
         }
         
          
