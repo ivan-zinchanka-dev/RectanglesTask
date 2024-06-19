@@ -1,0 +1,70 @@
+[
+  {
+    "_secondaryRectangles": [
+      {
+        "TopLeft": {
+          "X": -2.5,
+          "Y": -56.4
+        },
+        "BottomRight": {
+          "X": 12.4,
+          "Y": 67.2
+        }
+      },
+      {
+        "TopLeft": {
+          "X": 12.4,
+          "Y": 67.2
+        },
+        "BottomRight": {
+          "X": -2.5,
+          "Y": -56.4
+        }
+      }
+    ],
+    "PrimaryRectangle": {
+      "TopLeft": {
+        "X": 12.4,
+        "Y": 67.2
+      },
+      "BottomRight": {
+        "X": -2.5,
+        "Y": -56.4
+      }
+    }
+  },
+  {
+    "_secondaryRectangles": [
+      {
+        "TopLeft": {
+          "X": 1000.0,
+          "Y": 1000.0
+        },
+        "BottomRight": {
+          "X": 1000.0,
+          "Y": 1000.0
+        }
+      },
+      {
+        "TopLeft": {
+          "X": 1000.0,
+          "Y": 1000.0
+        },
+        "BottomRight": {
+          "X": 1000.0,
+          "Y": 1000.0
+        }
+      }
+    ],
+    "PrimaryRectangle": {
+      "TopLeft": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "BottomRight": {
+        "X": 1.0,
+        "Y": 1.0
+      }
+    }
+  }
+]
