@@ -12,7 +12,14 @@ namespace Visual.Extensions
         
         public static Rect ToUniRect(this Rectangle rectangle)
         {
-            return new Rect(rectangle.TopLeft.ToUniVector2(), rectangle.BottomRight.ToUniVector2());
+            Vector2 topLeft = rectangle.TopLeft.ToUniVector2();
+            Vector2 bottomRight = rectangle.BottomRight.ToUniVector2();
+            
+            Vector2 centerPoint = (topLeft + bottomRight) / 2f;
+            Vector2 size = new Vector2(Mathf.Abs(topLeft.x - bottomRight.x), Mathf.Abs(topLeft.y - bottomRight.y));
+            Rect result = new Rect(centerPoint, size);
+            
+            return result;
         }
     }
 }

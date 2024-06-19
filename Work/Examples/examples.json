@@ -3,68 +3,35 @@
     "_secondaryRectangles": [
       {
         "TopLeft": {
-          "X": -2.5,
-          "Y": -56.4
+          "X": 200,
+          "Y": 400
         },
         "BottomRight": {
-          "X": 12.4,
-          "Y": 67.2
+          "X": 0,
+          "Y": 0
         }
       },
       {
         "TopLeft": {
-          "X": 12.4,
-          "Y": 67.2
+          "X": 600,
+          "Y": 900
         },
         "BottomRight": {
-          "X": -2.5,
-          "Y": -56.4
+          "X": 0,
+          "Y": 100
         }
       }
     ],
     "PrimaryRectangle": {
       "TopLeft": {
-        "X": 12.4,
-        "Y": 67.2
+        "X": -200,
+        "Y": -400
       },
       "BottomRight": {
-        "X": -2.5,
-        "Y": -56.4
+        "X": 0,
+        "Y": 0
       }
     }
   },
-  {
-    "_secondaryRectangles": [
-      {
-        "TopLeft": {
-          "X": 1000.0,
-          "Y": 1000.0
-        },
-        "BottomRight": {
-          "X": 1000.0,
-          "Y": 1000.0
-        }
-      },
-      {
-        "TopLeft": {
-          "X": 1000.0,
-          "Y": 1000.0
-        },
-        "BottomRight": {
-          "X": 1000.0,
-          "Y": 1000.0
-        }
-      }
-    ],
-    "PrimaryRectangle": {
-      "TopLeft": {
-        "X": 1.0,
-        "Y": 1.0
-      },
-      "BottomRight": {
-        "X": 1.0,
-        "Y": 1.0
-      }
-    }
-  }
+  
 ]
