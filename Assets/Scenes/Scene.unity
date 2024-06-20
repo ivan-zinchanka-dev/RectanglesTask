@@ -259,7 +259,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Use these keys to control the application:
 
-    Space - resolve exaple
+    Space - resolve example
 
     A/D
     or Left/Right arrows - change example'
@@ -483,7 +483,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Use these keys to control the application:
 
-    Space - resolve exaple
+    Space - resolve example
 
     A/D
     or Left/Right arrows - change example'

@@ -5,24 +5,28 @@ using Newtonsoft.Json;
 
 namespace Core.Models
 {
-    public class Example : ICloneable
+    public class Blueprint : ICloneable
     {
         public Rectangle PrimaryRectangle { get; private set; }
         [JsonProperty] private List<Rectangle> _secondaryRectangles = new List<Rectangle>();
         [JsonIgnore] public List<Rectangle> SecondaryRectangles => new List<Rectangle>(_secondaryRectangles);
+
+        private readonly BlueprintType _type = BlueprintType.Example;
+        public BlueprintType Type => _type;
         
-        public Example(Rectangle primaryRectangle, List<Rectangle> secondaryRectangles)
+        public Blueprint(BlueprintType type, Rectangle primaryRectangle, List<Rectangle> secondaryRectangles)
         {
+            _type = type;
             PrimaryRectangle = primaryRectangle;
             _secondaryRectangles = secondaryRectangles;
         }
 
         [Pure]
-        public Example Resolve()
+        public Blueprint Resolve()
         {
             if (_secondaryRectangles.Count == 0)
             {
-                return CloneInternal();
+                return CloneInternal(BlueprintType.Solution);
             }
 
             Rectangle newPrimary = (Rectangle)_secondaryRectangles[0].Clone();
@@ -35,13 +39,13 @@ namespace Core.Models
                 newPrimary.End.Y = Math.Min(newPrimary.End.Y, secondary.MinY);
             }
 
-            Example solution = CloneInternal();
+            Blueprint solution = CloneInternal(BlueprintType.Solution);
             solution.PrimaryRectangle = newPrimary;
             
             return solution;
         }
         
-        public object Clone() => CloneInternal();
-        private Example CloneInternal() => new Example(PrimaryRectangle, SecondaryRectangles);
+        public object Clone() => CloneInternal(_type);
+        private Blueprint CloneInternal(BlueprintType type) => new(type, PrimaryRectangle, SecondaryRectangles);
     }
 }

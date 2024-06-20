@@ -10,27 +10,58 @@ namespace Visual
         [SerializeField] private Transform _sourceArea;
         [SerializeField] private Transform _resultArea;
         
-        public void DrawExample(Example example, bool isSolution = false)
+        public void DrawBlueprint(Blueprint blueprint)
         {
-            DrawPrimaryRectangle(example.PrimaryRectangle, isSolution);
+            DrawPrimaryRectangle(blueprint);
+            DrawSecondaryRectangles(blueprint);
+        }
+
+        public void ClearAllAreas()
+        {
+            ClearArea(_sourceArea);
+            ClearArea(_resultArea);
+        }
+
+        public void ClearAreaFor(BlueprintType blueprintType)
+        {
+            ClearArea(GetArea(blueprintType));
+        }
+
+        private void DrawPrimaryRectangle(Blueprint blueprint)
+        {
+            Instantiate<RectangleView>(_primaryRectanglePrefab, GetArea(blueprint.Type), false)
+                .Initialize(blueprint.PrimaryRectangle);
+        }
+
+        private void DrawSecondaryRectangles(Blueprint blueprint)
+        {
+            Transform area = GetArea(blueprint.Type);
             
-            foreach (var rectangle in example.SecondaryRectangles)
+            foreach (var rectangle in blueprint.SecondaryRectangles)
             {
-                DrawSecondaryRectangle(rectangle, isSolution);
+                Instantiate<RectangleView>(_secondaryRectanglePrefab, area, false).Initialize(rectangle);
             }
         }
 
-        public void DrawPrimaryRectangle(Rectangle rectangle, bool isSolution)
+        private Transform GetArea(BlueprintType blueprintType)
         {
-            Instantiate<RectangleView>(_primaryRectanglePrefab, isSolution ? _resultArea : _sourceArea, false)
-                .Initialize(rectangle);
+            if (blueprintType == BlueprintType.Solution)
+            {
+                return _resultArea;
+            }
+            else
+            {
+                return _sourceArea;
+            }
         }
 
-        public void DrawSecondaryRectangle(Rectangle rectangle, bool isSolution)
+        private static void ClearArea(Transform area)
         {
-            Instantiate<RectangleView>(_secondaryRectanglePrefab, isSolution ? _resultArea : _sourceArea, false)
-                .Initialize(rectangle);
+            foreach (Transform child in area)
+            {
+                Destroy(child.gameObject);
+            }
         }
-        
+
     }
 }

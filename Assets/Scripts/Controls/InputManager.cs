@@ -10,8 +10,7 @@ namespace Controls
         private const string RightExampleActionName = "ToRightExample";
 
         public event Action Resolve;
-        public event Action LeftExample;
-        public event Action RightExample;
+        public event Action<int> SwitchBlueprint;
         
         private void Update()
         {
@@ -21,11 +20,11 @@ namespace Controls
             }
             else if (Input.GetButtonDown(LeftExampleActionName))
             {
-                LeftExample?.Invoke();
+                SwitchBlueprint?.Invoke(-1);
             }
             else if (Input.GetButtonDown(RightExampleActionName))
             {
-                RightExample?.Invoke();
+                SwitchBlueprint?.Invoke(1);
             }
         }
     }

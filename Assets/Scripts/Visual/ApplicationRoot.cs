@@ -12,36 +12,47 @@ namespace Visual
         [SerializeField] private Drawer _drawer;
         [SerializeField] private InputManager _inputManager;
         
-        private ExamplesDataService _examplesDataService = new ExamplesDataService();
-
-        
-        private int _currentExampleIndex = 0;
+        private ExamplesReader _examplesReader = new ExamplesReader();
+        private List<Blueprint> _blueprints;
+        private int _currentBlueprintIndex = 0;
         
         private async void Awake()
         {
-            _examplesDataService = new ExamplesDataService();
-
-            List<Example> examples = await _examplesDataService.ReadExamplesAsync();
+            _examplesReader = new ExamplesReader();
+            _blueprints = await _examplesReader.ReadExamplesAsync();
             
-            _drawer.DrawExample(examples[_currentExampleIndex]);
-            
+            _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
         }
         
         private void OnEnable()
         {
             _inputManager.Resolve += Resolve;
+            _inputManager.SwitchBlueprint += SwitchBlueprint;
         }
 
         private void Resolve()
         {
-            _drawer.DrawExample(_examplesDataService.Examples[_currentExampleIndex].Resolve(), true);
-            // TODO Clear solution before draw new
-            
+            Blueprint solution = _blueprints[_currentBlueprintIndex].Resolve();
+            _drawer.ClearAreaFor(solution.Type);
+            _drawer.DrawBlueprint(solution);
         }
-        
+
+        private void SwitchBlueprint(int direction)
+        {
+            int previousBlueprintIndex = _currentBlueprintIndex; 
+            _currentBlueprintIndex = Math.Clamp(_currentBlueprintIndex + direction, 0, _blueprints.Count - 1);
+
+            if (_currentBlueprintIndex != previousBlueprintIndex)
+            {
+                _drawer.ClearAllAreas();
+                _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
+            }
+        }
+
         private void OnDisable()
         {
             _inputManager.Resolve -= Resolve;
+            _inputManager.SwitchBlueprint -= SwitchBlueprint;
         }
     }
 }
