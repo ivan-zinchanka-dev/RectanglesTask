@@ -12,8 +12,8 @@ namespace Visual
         
         public void DrawBlueprint(Blueprint blueprint)
         {
-            DrawPrimaryRectangle(blueprint);
             DrawSecondaryRectangles(blueprint);
+            DrawPrimaryRectangle(blueprint);
         }
 
         public void ClearAllAreas()
