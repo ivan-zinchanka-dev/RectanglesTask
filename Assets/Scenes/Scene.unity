@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 103871102}
   - component: {fileID: 103871101}
   - component: {fileID: 103871103}
+  - component: {fileID: 103871104}
   m_Layer: 0
   m_Name: Root
   m_TagString: Untagged
@@ -154,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _drawer: {fileID: 103871103}
+  _inputManager: {fileID: 103871104}
 --- !u!4 &103871102
 Transform:
   m_ObjectHideFlags: 0
@@ -185,6 +187,18 @@ MonoBehaviour:
   _secondaryRectanglePrefab: {fileID: 2403616829875602102, guid: 110ef164ae0251a4a8ad11cc92edb42a, type: 3}
   _sourceArea: {fileID: 1086006571}
   _resultArea: {fileID: 1143830434}
+--- !u!114 &103871104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103871100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 821876cc3d0845998b1ed3e7baf4fd60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &233298245
 GameObject:
   m_ObjectHideFlags: 0

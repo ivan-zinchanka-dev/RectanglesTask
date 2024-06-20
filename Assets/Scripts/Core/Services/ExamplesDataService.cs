@@ -19,6 +19,8 @@ namespace Core.Services
         private List<Example> _examples = new List<Example>();
 
         private DirectoryInfo _examplesDirectory;
+
+        public List<Example> Examples => _examples; 
         
         public ExamplesDataService()
         {
