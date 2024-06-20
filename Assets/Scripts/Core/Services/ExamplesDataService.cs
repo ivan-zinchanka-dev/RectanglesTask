@@ -58,11 +58,19 @@ namespace Core.Services
             {
                 Debug.LogException(new Exception("Examples file not found"));
             }
+
+            try
+            {
+                string jsonNotation = await File.ReadAllTextAsync(fullExamplesFileName);
+                _examples = JsonConvert.DeserializeObject<List<Example>>(jsonNotation);
+
+            }
+            catch (Exception ex)
+            {
+                Debug.LogException(ex);
+                Debug.LogException(new Exception("examples.json is incorrect or corrupted"));
+            }
             
-            string jsonNotation = await File.ReadAllTextAsync(fullExamplesFileName);
-
-            _examples = JsonConvert.DeserializeObject<List<Example>>(jsonNotation);
-
             return _examples;
         }
         

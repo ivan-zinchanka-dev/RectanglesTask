@@ -5,25 +5,32 @@ namespace Visual
 {
     public class Drawer : MonoBehaviour
     {
-        [SerializeField] private RectangleView _rectanglePrefab;
+        [SerializeField] private RectangleView _primaryRectanglePrefab;
+        [SerializeField] private RectangleView _secondaryRectanglePrefab;
         [SerializeField] private Transform _sourceArea;
         [SerializeField] private Transform _resultArea;
         
         public void DrawExample(Example example, bool isSolution = false)
         {
+            DrawPrimaryRectangle(example.PrimaryRectangle, isSolution);
+            
             foreach (var rectangle in example.SecondaryRectangles)
             {
-                DrawRectangle(rectangle, isSolution);
+                DrawSecondaryRectangle(rectangle, isSolution);
             }
-            
-            DrawRectangle(example.PrimaryRectangle, isSolution);
         }
 
-        public void DrawRectangle(Rectangle rectangle, bool isSolution)
+        public void DrawPrimaryRectangle(Rectangle rectangle, bool isSolution)
         {
-            Instantiate<RectangleView>(_rectanglePrefab, isSolution ? _resultArea : _sourceArea, false)
+            Instantiate<RectangleView>(_primaryRectanglePrefab, isSolution ? _resultArea : _sourceArea, false)
                 .Initialize(rectangle);
         }
 
+        public void DrawSecondaryRectangle(Rectangle rectangle, bool isSolution)
+        {
+            Instantiate<RectangleView>(_secondaryRectanglePrefab, isSolution ? _resultArea : _sourceArea, false)
+                .Initialize(rectangle);
+        }
+        
     }
 }

@@ -26,10 +26,10 @@ namespace Core.Models
             for (int i = 1; i < _secondaryRectangles.Count; i++)        // TODO check array size
             {
                 Rectangle rectangle = _secondaryRectangles[i];
-                newPrimaryRectangle.TopLeft.X = Math.Min(newPrimaryRectangle.TopLeft.X, rectangle.MinX);
-                newPrimaryRectangle.TopLeft.Y = Math.Max(newPrimaryRectangle.TopLeft.Y, rectangle.MaxY);
-                newPrimaryRectangle.BottomRight.X = Math.Max(newPrimaryRectangle.BottomRight.X, rectangle.MaxX);
-                newPrimaryRectangle.BottomRight.Y = Math.Min(newPrimaryRectangle.BottomRight.Y, rectangle.MinY);
+                newPrimaryRectangle.Start.X = Math.Min(newPrimaryRectangle.Start.X, rectangle.MinX);
+                newPrimaryRectangle.Start.Y = Math.Max(newPrimaryRectangle.Start.Y, rectangle.MaxY);
+                newPrimaryRectangle.End.X = Math.Max(newPrimaryRectangle.End.X, rectangle.MaxX);
+                newPrimaryRectangle.End.Y = Math.Min(newPrimaryRectangle.End.Y, rectangle.MinY);
             }
 
             Example solution = CloneInternal();

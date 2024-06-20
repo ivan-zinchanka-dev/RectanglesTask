@@ -4,24 +4,24 @@ namespace Core.Models
 {
     public class Rectangle : ICloneable
     {
-        public Point TopLeft { get; set; }
-        public Point BottomRight { get; set; }
+        public Point Start { get; set; }
+        public Point End { get; set; }
         
-        public double MinX => Math.Min(TopLeft.X, BottomRight.X);
-        public double MinY => Math.Min(TopLeft.Y, BottomRight.Y);
+        public double MinX => Math.Min(Start.X, End.X);
+        public double MinY => Math.Min(Start.Y, End.Y);
         
-        public double MaxX => Math.Max(TopLeft.X, BottomRight.X);
-        public double MaxY => Math.Max(TopLeft.Y, BottomRight.Y);
+        public double MaxX => Math.Max(Start.X, End.X);
+        public double MaxY => Math.Max(Start.Y, End.Y);
         
-        public Rectangle(Point topLeft, Point bottomRight)
+        public Rectangle(Point start, Point end)
         {
-            TopLeft = topLeft;
-            BottomRight = bottomRight;
+            Start = start;
+            End = end;
         }
 
         public object Clone()
         {
-            return new Rectangle((Point)TopLeft.Clone(), (Point)BottomRight.Clone());
+            return new Rectangle((Point)Start.Clone(), (Point)End.Clone());
         }
     }
 }

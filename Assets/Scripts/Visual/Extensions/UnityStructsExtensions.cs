@@ -12,8 +12,8 @@ namespace Visual.Extensions
         
         public static Rect ToUniRect(this Rectangle rectangle)
         {
-            Vector2 topLeft = rectangle.TopLeft.ToUniVector2();
-            Vector2 bottomRight = rectangle.BottomRight.ToUniVector2();
+            Vector2 topLeft = rectangle.Start.ToUniVector2();
+            Vector2 bottomRight = rectangle.End.ToUniVector2();
             
             Vector2 centerPoint = (topLeft + bottomRight) / 2f;
             Vector2 size = new Vector2(Mathf.Abs(topLeft.x - bottomRight.x), Mathf.Abs(topLeft.y - bottomRight.y));
