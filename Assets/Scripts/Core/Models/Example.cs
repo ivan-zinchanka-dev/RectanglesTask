@@ -10,8 +10,7 @@ namespace Core.Models
         public Rectangle PrimaryRectangle { get; private set; }
         [JsonProperty] private List<Rectangle> _secondaryRectangles = new List<Rectangle>();
         [JsonIgnore] public List<Rectangle> SecondaryRectangles => new List<Rectangle>(_secondaryRectangles);
-
-
+        
         public Example(Rectangle primaryRectangle, List<Rectangle> secondaryRectangles)
         {
             PrimaryRectangle = primaryRectangle;
@@ -21,25 +20,28 @@ namespace Core.Models
         [Pure]
         public Example Resolve()
         {
-            Rectangle newPrimaryRectangle = (Rectangle)_secondaryRectangles[0].Clone();
-
-            for (int i = 1; i < _secondaryRectangles.Count; i++)        // TODO check array size
+            if (_secondaryRectangles.Count == 0)
             {
-                Rectangle rectangle = _secondaryRectangles[i];
-                newPrimaryRectangle.Start.X = Math.Min(newPrimaryRectangle.Start.X, rectangle.MinX);
-                newPrimaryRectangle.Start.Y = Math.Max(newPrimaryRectangle.Start.Y, rectangle.MaxY);
-                newPrimaryRectangle.End.X = Math.Max(newPrimaryRectangle.End.X, rectangle.MaxX);
-                newPrimaryRectangle.End.Y = Math.Min(newPrimaryRectangle.End.Y, rectangle.MinY);
+                return CloneInternal();
+            }
+
+            Rectangle newPrimary = (Rectangle)_secondaryRectangles[0].Clone();
+
+            foreach (var secondary in _secondaryRectangles)
+            {
+                newPrimary.Start.X = Math.Min(newPrimary.Start.X, secondary.MinX);
+                newPrimary.Start.Y = Math.Max(newPrimary.Start.Y, secondary.MaxY);
+                newPrimary.End.X = Math.Max(newPrimary.End.X, secondary.MaxX);
+                newPrimary.End.Y = Math.Min(newPrimary.End.Y, secondary.MinY);
             }
 
             Example solution = CloneInternal();
-            solution.PrimaryRectangle = newPrimaryRectangle;
+            solution.PrimaryRectangle = newPrimary;
             
-            return  solution;
+            return solution;
         }
-
-        private Example CloneInternal() => new Example(PrimaryRectangle, SecondaryRectangles);
-
+        
         public object Clone() => CloneInternal();
+        private Example CloneInternal() => new Example(PrimaryRectangle, SecondaryRectangles);
     }
 }
