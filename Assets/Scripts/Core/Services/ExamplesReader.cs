@@ -37,19 +37,28 @@ namespace Core.Services
 
                     if (string.IsNullOrWhiteSpace(jsonNotation) || jsonNotation == string.Empty)
                     {
+                        Debug.LogWarning($"File {file.FullName} is empty");
                         examples.Add(new Blueprint(true));
                     }
                     else
                     {
-                        Blueprint example = JsonConvert.DeserializeObject<Blueprint>(jsonNotation) ?? new Blueprint(true);
-                        examples.Add(example);
+                        Blueprint example = JsonConvert.DeserializeObject<Blueprint>(jsonNotation);
+
+                        if (example == null)
+                        {
+                            Debug.LogWarning($"File {file.FullName} is corrupted");
+                            examples.Add(new Blueprint(true));
+                        }
+                        else
+                        {
+                            Debug.Log($"File {file.FullName} read successfully");
+                            examples.Add(example);
+                        }
                     }
                 }
                 catch (Exception ex)
                 {
-                    Debug.LogException(ex);
-                    Debug.LogException(new Exception($"File {file.FullName} is incorrect or corrupted"));
-                    
+                    Debug.LogWarning($"File {file.FullName} is corrupted");
                     examples.Add(new Blueprint(true));
                 }
             }

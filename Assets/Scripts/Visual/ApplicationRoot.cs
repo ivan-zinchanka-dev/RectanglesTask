@@ -5,6 +5,7 @@ using Core.Models;
 using Core.Services;
 using TMPro;
 using UnityEngine;
+using Logger = Core.Services.Logger;
 
 namespace Visual
 {
@@ -14,12 +15,14 @@ namespace Visual
         [SerializeField] private Drawer _drawer;
         [SerializeField] private InputManager _inputManager;
         
-        private ExamplesReader _examplesReader = new ExamplesReader();
+        private ExamplesReader _examplesReader;
+        private Logger _logger;
         private List<Blueprint> _blueprints;
         private int _currentBlueprintIndex = 0;
         
         private async void Awake()
         {
+            _logger = new Logger(@".\Work\app.log");
             _examplesReader = new ExamplesReader();
             _blueprints = await _examplesReader.ReadExamplesAsync();
             
@@ -57,6 +60,11 @@ namespace Visual
         {
             _inputManager.Resolve -= Resolve;
             _inputManager.SwitchBlueprint -= SwitchBlueprint;
+        }
+
+        private void OnDestroy()
+        {
+            _logger.Dispose();
         }
     }
 }
