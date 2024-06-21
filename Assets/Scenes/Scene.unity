@@ -832,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Use files in "\Work\Examples" folder to add, edit or remove examples
+  m_text: 'Use files in "\Work\Examples" folder to explore, add, edit or remove examples
 
     Use
     "Work\app.log" file to see the logs'

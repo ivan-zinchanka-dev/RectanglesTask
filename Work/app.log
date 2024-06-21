@@ -2194,3 +2194,754 @@
 [22.06.2024 0:00:24] Information: Drawing of the example completed
 [22.06.2024 0:00:24] Information: Switching of example completed
 [22.06.2024 0:00:29] Information: Application is shutting down
+[22.06.2024 0:02:55] Information: Application started
+[22.06.2024 0:02:55] Information: Loading of examples started
+[22.06.2024 0:02:56] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_0.json read successfully
+[22.06.2024 0:02:56] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_1.json read successfully
+[22.06.2024 0:02:56] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_2.json read successfully
+[22.06.2024 0:02:56] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_3.json read successfully
+[22.06.2024 0:02:56] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_4.json read successfully
+[22.06.2024 0:02:56] Warning: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_5.json is corrupted
+[22.06.2024 0:02:56] Information: Loading of examples completed
+[22.06.2024 0:02:56] Information: Drawing of the example started
+[22.06.2024 0:02:56] Information: Drawing of the example completed
+[22.06.2024 0:02:57] Information: Example resolving started
+[22.06.2024 0:02:57] Information: Source secondary rectangles count: 5
+[22.06.2024 0:02:57] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:02:57] Information: Source points count: 20
+[22.06.2024 0:02:57] Information: Filtered points count: 20
+[22.06.2024 0:02:57] Information: Example resolving completed
+[22.06.2024 0:02:57] Information: Drawing of the solution started
+[22.06.2024 0:02:57] Information: Drawing of the solution completed
+[22.06.2024 0:02:58] Information: Switching of example started
+[22.06.2024 0:02:58] Information: Drawing of the example started
+[22.06.2024 0:02:58] Information: Drawing of the example completed
+[22.06.2024 0:02:58] Information: Switching of example completed
+[22.06.2024 0:02:59] Information: Example resolving started
+[22.06.2024 0:02:59] Information: Source secondary rectangles count: 5
+[22.06.2024 0:02:59] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:02:59] Information: Source points count: 20
+[22.06.2024 0:02:59] Information: Filtered points count: 20
+[22.06.2024 0:02:59] Information: Example resolving completed
+[22.06.2024 0:02:59] Information: Drawing of the solution started
+[22.06.2024 0:02:59] Information: Drawing of the solution completed
+[22.06.2024 0:03:20] Information: Switching of example started
+[22.06.2024 0:03:20] Information: Drawing of the example started
+[22.06.2024 0:03:20] Information: Drawing of the example completed
+[22.06.2024 0:03:20] Information: Switching of example completed
+[22.06.2024 0:03:21] Information: Switching of example started
+[22.06.2024 0:03:21] Information: Drawing of the example started
+[22.06.2024 0:03:21] Information: Drawing of the example completed
+[22.06.2024 0:03:21] Information: Switching of example completed
+[22.06.2024 0:03:21] Information: Example resolving started
+[22.06.2024 0:03:21] Information: Source secondary rectangles count: 5
+[22.06.2024 0:03:21] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:03:21] Information: Source points count: 20
+[22.06.2024 0:03:21] Information: Filtered points count: 20
+[22.06.2024 0:03:21] Information: Example resolving completed
+[22.06.2024 0:03:21] Information: Drawing of the solution started
+[22.06.2024 0:03:21] Information: Drawing of the solution completed
+[22.06.2024 0:03:22] Information: Switching of example started
+[22.06.2024 0:03:22] Information: Drawing of the example started
+[22.06.2024 0:03:22] Information: Drawing of the example completed
+[22.06.2024 0:03:22] Information: Switching of example completed
+[22.06.2024 0:03:23] Information: Application is shutting down
+[22.06.2024 0:04:00] Information: Application started
+[22.06.2024 0:04:00] Information: Loading of examples started
+[22.06.2024 0:04:00] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_0.json read successfully
+[22.06.2024 0:04:00] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_1.json read successfully
+[22.06.2024 0:04:01] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_2.json read successfully
+[22.06.2024 0:04:01] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_3.json read successfully
+[22.06.2024 0:04:01] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_4.json read successfully
+[22.06.2024 0:04:01] Warning: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_5.json is corrupted
+[22.06.2024 0:04:01] Information: Loading of examples completed
+[22.06.2024 0:04:01] Information: Drawing of the example started
+[22.06.2024 0:04:01] Information: Drawing of the example completed
+[22.06.2024 0:04:01] Information: Example resolving started
+[22.06.2024 0:04:01] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:01] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:04:01] Information: Source points count: 20
+[22.06.2024 0:04:01] Information: Filtered points count: 20
+[22.06.2024 0:04:01] Information: Example resolving completed
+[22.06.2024 0:04:01] Information: Drawing of the solution started
+[22.06.2024 0:04:01] Information: Drawing of the solution completed
+[22.06.2024 0:04:02] Information: Switching of example started
+[22.06.2024 0:04:02] Information: Drawing of the example started
+[22.06.2024 0:04:02] Information: Drawing of the example completed
+[22.06.2024 0:04:02] Information: Switching of example completed
+[22.06.2024 0:04:02] Information: Example resolving started
+[22.06.2024 0:04:02] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:02] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:04:02] Information: Source points count: 20
+[22.06.2024 0:04:02] Information: Filtered points count: 20
+[22.06.2024 0:04:02] Information: Example resolving completed
+[22.06.2024 0:04:02] Information: Drawing of the solution started
+[22.06.2024 0:04:02] Information: Drawing of the solution completed
+[22.06.2024 0:04:03] Information: Switching of example started
+[22.06.2024 0:04:03] Information: Drawing of the example started
+[22.06.2024 0:04:03] Information: Drawing of the example completed
+[22.06.2024 0:04:03] Information: Switching of example completed
+[22.06.2024 0:04:03] Information: Example resolving started
+[22.06.2024 0:04:03] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:03] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:04:03] Information: Source points count: 20
+[22.06.2024 0:04:03] Information: Filtered points count: 14
+[22.06.2024 0:04:03] Information: Example resolving completed
+[22.06.2024 0:04:03] Information: Drawing of the solution started
+[22.06.2024 0:04:03] Information: Drawing of the solution completed
+[22.06.2024 0:04:09] Information: Switching of example started
+[22.06.2024 0:04:09] Information: Drawing of the example started
+[22.06.2024 0:04:09] Information: Drawing of the example completed
+[22.06.2024 0:04:09] Information: Switching of example completed
+[22.06.2024 0:04:09] Information: Example resolving started
+[22.06.2024 0:04:09] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:09] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:04:09] Information: Source points count: 20
+[22.06.2024 0:04:09] Information: Filtered points count: 20
+[22.06.2024 0:04:09] Information: Example resolving completed
+[22.06.2024 0:04:09] Information: Drawing of the solution started
+[22.06.2024 0:04:09] Information: Drawing of the solution completed
+[22.06.2024 0:04:10] Information: Switching of example started
+[22.06.2024 0:04:10] Information: Drawing of the example started
+[22.06.2024 0:04:10] Information: Drawing of the example completed
+[22.06.2024 0:04:10] Information: Switching of example completed
+[22.06.2024 0:04:10] Information: Example resolving started
+[22.06.2024 0:04:10] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:10] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:04:10] Information: Source points count: 20
+[22.06.2024 0:04:10] Information: Filtered points count: 14
+[22.06.2024 0:04:10] Information: Example resolving completed
+[22.06.2024 0:04:10] Information: Drawing of the solution started
+[22.06.2024 0:04:10] Information: Drawing of the solution completed
+[22.06.2024 0:04:21] Information: Switching of example started
+[22.06.2024 0:04:21] Information: Drawing of the example started
+[22.06.2024 0:04:21] Information: Drawing of the example completed
+[22.06.2024 0:04:21] Information: Switching of example completed
+[22.06.2024 0:04:22] Information: Example resolving started
+[22.06.2024 0:04:22] Information: Source secondary rectangles count: 5
+[22.06.2024 0:04:22] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:04:22] Information: Source points count: 12
+[22.06.2024 0:04:22] Information: Filtered points count: 12
+[22.06.2024 0:04:22] Information: Example resolving completed
+[22.06.2024 0:04:22] Information: Drawing of the solution started
+[22.06.2024 0:04:22] Information: Drawing of the solution completed
+[22.06.2024 0:04:23] Information: Application is shutting down
+[22.06.2024 0:05:45] Information: Application started
+[22.06.2024 0:05:45] Information: Loading of examples started
+[22.06.2024 0:05:45] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_0.json read successfully
+[22.06.2024 0:05:45] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_1.json read successfully
+[22.06.2024 0:05:46] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_2.json read successfully
+[22.06.2024 0:05:46] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_3.json read successfully
+[22.06.2024 0:05:46] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_4.json read successfully
+[22.06.2024 0:05:46] Warning: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_5.json is corrupted
+[22.06.2024 0:05:46] Information: Loading of examples completed
+[22.06.2024 0:05:46] Information: Drawing of the example started
+[22.06.2024 0:05:46] Information: Drawing of the example completed
+[22.06.2024 0:05:47] Information: Example resolving started
+[22.06.2024 0:05:47] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:47] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:05:47] Information: Source points count: 20
+[22.06.2024 0:05:47] Information: Filtered points count: 20
+[22.06.2024 0:05:47] Information: Example resolving completed
+[22.06.2024 0:05:47] Information: Drawing of the solution started
+[22.06.2024 0:05:47] Information: Drawing of the solution completed
+[22.06.2024 0:05:48] Information: Switching of example started
+[22.06.2024 0:05:48] Information: Drawing of the example started
+[22.06.2024 0:05:48] Information: Drawing of the example completed
+[22.06.2024 0:05:48] Information: Switching of example completed
+[22.06.2024 0:05:48] Information: Example resolving started
+[22.06.2024 0:05:48] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:48] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:05:48] Information: Source points count: 20
+[22.06.2024 0:05:48] Information: Filtered points count: 20
+[22.06.2024 0:05:48] Information: Example resolving completed
+[22.06.2024 0:05:48] Information: Drawing of the solution started
+[22.06.2024 0:05:48] Information: Drawing of the solution completed
+[22.06.2024 0:05:49] Information: Switching of example started
+[22.06.2024 0:05:49] Information: Drawing of the example started
+[22.06.2024 0:05:49] Information: Drawing of the example completed
+[22.06.2024 0:05:49] Information: Switching of example completed
+[22.06.2024 0:05:49] Information: Example resolving started
+[22.06.2024 0:05:49] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:49] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:05:49] Information: Source points count: 20
+[22.06.2024 0:05:49] Information: Filtered points count: 14
+[22.06.2024 0:05:49] Information: Example resolving completed
+[22.06.2024 0:05:49] Information: Drawing of the solution started
+[22.06.2024 0:05:49] Information: Drawing of the solution completed
+[22.06.2024 0:05:51] Information: Switching of example started
+[22.06.2024 0:05:51] Information: Drawing of the example started
+[22.06.2024 0:05:51] Information: Drawing of the example completed
+[22.06.2024 0:05:51] Information: Switching of example completed
+[22.06.2024 0:05:52] Information: Example resolving started
+[22.06.2024 0:05:52] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:52] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:05:52] Information: Source points count: 12
+[22.06.2024 0:05:52] Information: Filtered points count: 12
+[22.06.2024 0:05:52] Information: Example resolving completed
+[22.06.2024 0:05:52] Information: Drawing of the solution started
+[22.06.2024 0:05:52] Information: Drawing of the solution completed
+[22.06.2024 0:05:54] Information: Switching of example started
+[22.06.2024 0:05:54] Information: Drawing of the example started
+[22.06.2024 0:05:54] Information: Drawing of the example completed
+[22.06.2024 0:05:54] Information: Switching of example completed
+[22.06.2024 0:05:54] Information: Example resolving started
+[22.06.2024 0:05:54] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:54] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:05:54] Information: Source points count: 12
+[22.06.2024 0:05:54] Information: Filtered points count: 10
+[22.06.2024 0:05:54] Information: Example resolving completed
+[22.06.2024 0:05:54] Information: Drawing of the solution started
+[22.06.2024 0:05:54] Information: Drawing of the solution completed
+[22.06.2024 0:05:55] Information: Switching of example started
+[22.06.2024 0:05:55] Information: Drawing of the example started
+[22.06.2024 0:05:55] Information: Drawing of the example completed
+[22.06.2024 0:05:55] Information: Switching of example completed
+[22.06.2024 0:05:55] Information: Example resolving started
+[22.06.2024 0:05:55] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:55] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:05:55] Information: Source points count: 12
+[22.06.2024 0:05:55] Information: Filtered points count: 12
+[22.06.2024 0:05:55] Information: Example resolving completed
+[22.06.2024 0:05:55] Information: Drawing of the solution started
+[22.06.2024 0:05:55] Information: Drawing of the solution completed
+[22.06.2024 0:05:56] Information: Switching of example started
+[22.06.2024 0:05:56] Information: Drawing of the example started
+[22.06.2024 0:05:56] Information: Drawing of the example completed
+[22.06.2024 0:05:56] Information: Switching of example completed
+[22.06.2024 0:05:56] Information: Example resolving started
+[22.06.2024 0:05:56] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:56] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:05:56] Information: Source points count: 12
+[22.06.2024 0:05:56] Information: Filtered points count: 10
+[22.06.2024 0:05:56] Information: Example resolving completed
+[22.06.2024 0:05:56] Information: Drawing of the solution started
+[22.06.2024 0:05:56] Information: Drawing of the solution completed
+[22.06.2024 0:05:57] Information: Switching of example started
+[22.06.2024 0:05:57] Information: Drawing of the example started
+[22.06.2024 0:05:57] Information: Drawing of the example completed
+[22.06.2024 0:05:57] Information: Switching of example completed
+[22.06.2024 0:05:58] Information: Example resolving started
+[22.06.2024 0:05:58] Information: Source secondary rectangles count: 5
+[22.06.2024 0:05:58] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:05:58] Information: Source points count: 12
+[22.06.2024 0:05:58] Information: Filtered points count: 12
+[22.06.2024 0:05:58] Information: Example resolving completed
+[22.06.2024 0:05:58] Information: Drawing of the solution started
+[22.06.2024 0:05:58] Information: Drawing of the solution completed
+[22.06.2024 0:06:01] Information: Switching of example started
+[22.06.2024 0:06:01] Information: Drawing of the example started
+[22.06.2024 0:06:01] Information: Drawing of the example completed
+[22.06.2024 0:06:01] Information: Switching of example completed
+[22.06.2024 0:06:01] Information: Example resolving started
+[22.06.2024 0:06:01] Information: Source secondary rectangles count: 5
+[22.06.2024 0:06:01] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:06:01] Information: Source points count: 12
+[22.06.2024 0:06:01] Information: Filtered points count: 10
+[22.06.2024 0:06:01] Information: Example resolving completed
+[22.06.2024 0:06:01] Information: Drawing of the solution started
+[22.06.2024 0:06:01] Information: Drawing of the solution completed
+[22.06.2024 0:06:02] Information: Switching of example started
+[22.06.2024 0:06:02] Information: Drawing of the example started
+[22.06.2024 0:06:02] Information: Drawing of the example completed
+[22.06.2024 0:06:02] Information: Switching of example completed
+[22.06.2024 0:06:02] Information: Switching of example started
+[22.06.2024 0:06:02] Information: Switching of example completed
+[22.06.2024 0:06:03] Information: Switching of example started
+[22.06.2024 0:06:03] Information: Drawing of the example started
+[22.06.2024 0:06:03] Information: Drawing of the example completed
+[22.06.2024 0:06:03] Information: Switching of example completed
+[22.06.2024 0:06:03] Information: Switching of example started
+[22.06.2024 0:06:03] Information: Drawing of the example started
+[22.06.2024 0:06:03] Information: Drawing of the example completed
+[22.06.2024 0:06:03] Information: Switching of example completed
+[22.06.2024 0:06:04] Information: Switching of example started
+[22.06.2024 0:06:04] Information: Drawing of the example started
+[22.06.2024 0:06:04] Information: Drawing of the example completed
+[22.06.2024 0:06:04] Information: Switching of example completed
+[22.06.2024 0:06:04] Information: Switching of example started
+[22.06.2024 0:06:04] Information: Drawing of the example started
+[22.06.2024 0:06:04] Information: Drawing of the example completed
+[22.06.2024 0:06:04] Information: Switching of example completed
+[22.06.2024 0:06:05] Information: Switching of example started
+[22.06.2024 0:06:05] Information: Drawing of the example started
+[22.06.2024 0:06:05] Information: Drawing of the example completed
+[22.06.2024 0:06:05] Information: Switching of example completed
+[22.06.2024 0:06:05] Information: Switching of example started
+[22.06.2024 0:06:05] Information: Switching of example completed
+[22.06.2024 0:06:12] Information: Application is shutting down
+[22.06.2024 0:06:56] Information: Application started
+[22.06.2024 0:06:56] Information: Loading of examples started
+[22.06.2024 0:06:57] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_0.json read successfully
+[22.06.2024 0:06:57] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_1.json read successfully
+[22.06.2024 0:06:57] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_2.json read successfully
+[22.06.2024 0:06:57] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_3.json read successfully
+[22.06.2024 0:06:57] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_4.json read successfully
+[22.06.2024 0:06:57] Warning: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_5.json is corrupted
+[22.06.2024 0:06:57] Information: Loading of examples completed
+[22.06.2024 0:06:57] Information: Drawing of the example started
+[22.06.2024 0:06:58] Information: Drawing of the example completed
+[22.06.2024 0:06:58] Information: Example resolving started
+[22.06.2024 0:06:58] Information: Source secondary rectangles count: 5
+[22.06.2024 0:06:58] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:06:58] Information: Source points count: 20
+[22.06.2024 0:06:58] Information: Filtered points count: 20
+[22.06.2024 0:06:58] Information: Example resolving completed
+[22.06.2024 0:06:58] Information: Drawing of the solution started
+[22.06.2024 0:06:58] Information: Drawing of the solution completed
+[22.06.2024 0:06:58] Information: Switching of example started
+[22.06.2024 0:06:58] Information: Drawing of the example started
+[22.06.2024 0:06:58] Information: Drawing of the example completed
+[22.06.2024 0:06:58] Information: Switching of example completed
+[22.06.2024 0:06:59] Information: Example resolving started
+[22.06.2024 0:06:59] Information: Source secondary rectangles count: 5
+[22.06.2024 0:06:59] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:06:59] Information: Source points count: 20
+[22.06.2024 0:06:59] Information: Filtered points count: 20
+[22.06.2024 0:06:59] Information: Example resolving completed
+[22.06.2024 0:06:59] Information: Drawing of the solution started
+[22.06.2024 0:06:59] Information: Drawing of the solution completed
+[22.06.2024 0:06:59] Information: Switching of example started
+[22.06.2024 0:06:59] Information: Drawing of the example started
+[22.06.2024 0:06:59] Information: Drawing of the example completed
+[22.06.2024 0:06:59] Information: Switching of example completed
+[22.06.2024 0:06:59] Information: Example resolving started
+[22.06.2024 0:06:59] Information: Source secondary rectangles count: 5
+[22.06.2024 0:06:59] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:06:59] Information: Source points count: 20
+[22.06.2024 0:06:59] Information: Filtered points count: 14
+[22.06.2024 0:06:59] Information: Example resolving completed
+[22.06.2024 0:06:59] Information: Drawing of the solution started
+[22.06.2024 0:06:59] Information: Drawing of the solution completed
+[22.06.2024 0:07:00] Information: Switching of example started
+[22.06.2024 0:07:00] Information: Drawing of the example started
+[22.06.2024 0:07:00] Information: Drawing of the example completed
+[22.06.2024 0:07:00] Information: Switching of example completed
+[22.06.2024 0:07:00] Information: Example resolving started
+[22.06.2024 0:07:00] Information: Source secondary rectangles count: 5
+[22.06.2024 0:07:00] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:07:00] Information: Source points count: 12
+[22.06.2024 0:07:00] Information: Filtered points count: 12
+[22.06.2024 0:07:00] Information: Example resolving completed
+[22.06.2024 0:07:00] Information: Drawing of the solution started
+[22.06.2024 0:07:00] Information: Drawing of the solution completed
+[22.06.2024 0:07:04] Information: Switching of example started
+[22.06.2024 0:07:04] Information: Drawing of the example started
+[22.06.2024 0:07:04] Information: Drawing of the example completed
+[22.06.2024 0:07:04] Information: Switching of example completed
+[22.06.2024 0:07:05] Information: Switching of example started
+[22.06.2024 0:07:05] Information: Drawing of the example started
+[22.06.2024 0:07:05] Information: Drawing of the example completed
+[22.06.2024 0:07:05] Information: Switching of example completed
+[22.06.2024 0:07:06] Information: Switching of example started
+[22.06.2024 0:07:06] Information: Switching of example completed
+[22.06.2024 0:07:06] Information: Switching of example started
+[22.06.2024 0:07:06] Information: Drawing of the example started
+[22.06.2024 0:07:06] Information: Drawing of the example completed
+[22.06.2024 0:07:06] Information: Switching of example completed
+[22.06.2024 0:07:06] Information: Switching of example started
+[22.06.2024 0:07:06] Information: Drawing of the example started
+[22.06.2024 0:07:06] Information: Drawing of the example completed
+[22.06.2024 0:07:06] Information: Switching of example completed
+[22.06.2024 0:07:06] Information: Switching of example started
+[22.06.2024 0:07:06] Information: Drawing of the example started
+[22.06.2024 0:07:06] Information: Drawing of the example completed
+[22.06.2024 0:07:06] Information: Switching of example completed
+[22.06.2024 0:07:07] Information: Switching of example started
+[22.06.2024 0:07:07] Information: Drawing of the example started
+[22.06.2024 0:07:07] Information: Drawing of the example completed
+[22.06.2024 0:07:07] Information: Switching of example completed
+[22.06.2024 0:07:07] Information: Switching of example started
+[22.06.2024 0:07:07] Information: Drawing of the example started
+[22.06.2024 0:07:07] Information: Drawing of the example completed
+[22.06.2024 0:07:07] Information: Switching of example completed
+[22.06.2024 0:07:07] Information: Switching of example started
+[22.06.2024 0:07:07] Information: Drawing of the example started
+[22.06.2024 0:07:07] Information: Drawing of the example completed
+[22.06.2024 0:07:07] Information: Switching of example completed
+[22.06.2024 0:07:08] Information: Switching of example started
+[22.06.2024 0:07:08] Information: Drawing of the example started
+[22.06.2024 0:07:08] Information: Drawing of the example completed
+[22.06.2024 0:07:08] Information: Switching of example completed
+[22.06.2024 0:07:08] Information: Switching of example started
+[22.06.2024 0:07:08] Information: Drawing of the example started
+[22.06.2024 0:07:08] Information: Drawing of the example completed
+[22.06.2024 0:07:08] Information: Switching of example completed
+[22.06.2024 0:07:09] Information: Switching of example started
+[22.06.2024 0:07:09] Information: Drawing of the example started
+[22.06.2024 0:07:09] Information: Drawing of the example completed
+[22.06.2024 0:07:09] Information: Switching of example completed
+[22.06.2024 0:07:09] Information: Switching of example started
+[22.06.2024 0:07:09] Information: Drawing of the example started
+[22.06.2024 0:07:09] Information: Drawing of the example completed
+[22.06.2024 0:07:09] Information: Switching of example completed
+[22.06.2024 0:07:09] Information: Switching of example started
+[22.06.2024 0:07:09] Information: Drawing of the example started
+[22.06.2024 0:07:09] Information: Drawing of the example completed
+[22.06.2024 0:07:09] Information: Switching of example completed
+[22.06.2024 0:07:09] Information: Switching of example started
+[22.06.2024 0:07:09] Information: Drawing of the example started
+[22.06.2024 0:07:09] Information: Drawing of the example completed
+[22.06.2024 0:07:09] Information: Switching of example completed
+[22.06.2024 0:07:10] Information: Switching of example started
+[22.06.2024 0:07:10] Information: Drawing of the example started
+[22.06.2024 0:07:10] Information: Drawing of the example completed
+[22.06.2024 0:07:10] Information: Switching of example completed
+[22.06.2024 0:07:10] Information: Switching of example started
+[22.06.2024 0:07:10] Information: Drawing of the example started
+[22.06.2024 0:07:10] Information: Drawing of the example completed
+[22.06.2024 0:07:10] Information: Switching of example completed
+[22.06.2024 0:07:10] Information: Switching of example started
+[22.06.2024 0:07:10] Information: Drawing of the example started
+[22.06.2024 0:07:10] Information: Drawing of the example completed
+[22.06.2024 0:07:10] Information: Switching of example completed
+[22.06.2024 0:07:10] Information: Example resolving started
+[22.06.2024 0:07:10] Information: Source secondary rectangles count: 5
+[22.06.2024 0:07:10] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:07:10] Information: Source points count: 20
+[22.06.2024 0:07:10] Information: Filtered points count: 14
+[22.06.2024 0:07:10] Information: Example resolving completed
+[22.06.2024 0:07:10] Information: Drawing of the solution started
+[22.06.2024 0:07:10] Information: Drawing of the solution completed
+[22.06.2024 0:07:11] Information: Switching of example started
+[22.06.2024 0:07:11] Information: Drawing of the example started
+[22.06.2024 0:07:11] Information: Drawing of the example completed
+[22.06.2024 0:07:11] Information: Switching of example completed
+[22.06.2024 0:07:12] Information: Example resolving started
+[22.06.2024 0:07:12] Information: Source secondary rectangles count: 5
+[22.06.2024 0:07:12] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:07:12] Information: Source points count: 12
+[22.06.2024 0:07:12] Information: Filtered points count: 12
+[22.06.2024 0:07:12] Information: Example resolving completed
+[22.06.2024 0:07:12] Information: Drawing of the solution started
+[22.06.2024 0:07:12] Information: Drawing of the solution completed
+[22.06.2024 0:07:13] Information: Switching of example started
+[22.06.2024 0:07:13] Information: Drawing of the example started
+[22.06.2024 0:07:13] Information: Drawing of the example completed
+[22.06.2024 0:07:13] Information: Switching of example completed
+[22.06.2024 0:07:13] Information: Example resolving started
+[22.06.2024 0:07:13] Information: Source secondary rectangles count: 5
+[22.06.2024 0:07:13] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:07:13] Information: Source points count: 12
+[22.06.2024 0:07:13] Information: Filtered points count: 10
+[22.06.2024 0:07:13] Information: Example resolving completed
+[22.06.2024 0:07:13] Information: Drawing of the solution started
+[22.06.2024 0:07:13] Information: Drawing of the solution completed
+[22.06.2024 0:07:14] Information: Switching of example started
+[22.06.2024 0:07:14] Information: Drawing of the example started
+[22.06.2024 0:07:14] Information: Drawing of the example completed
+[22.06.2024 0:07:14] Information: Switching of example completed
+[22.06.2024 0:07:14] Information: Example resolving started
+[22.06.2024 0:07:14] Information: Source secondary rectangles count: 0
+[22.06.2024 0:07:14] Information: Drawing of the solution started
+[22.06.2024 0:07:14] Information: Drawing of the solution completed
+[22.06.2024 0:07:14] Information: Switching of example started
+[22.06.2024 0:07:14] Information: Drawing of the example started
+[22.06.2024 0:07:14] Information: Drawing of the example completed
+[22.06.2024 0:07:14] Information: Switching of example completed
+[22.06.2024 0:07:15] Information: Switching of example started
+[22.06.2024 0:07:15] Information: Drawing of the example started
+[22.06.2024 0:07:15] Information: Drawing of the example completed
+[22.06.2024 0:07:15] Information: Switching of example completed
+[22.06.2024 0:07:15] Information: Switching of example started
+[22.06.2024 0:07:15] Information: Drawing of the example started
+[22.06.2024 0:07:15] Information: Drawing of the example completed
+[22.06.2024 0:07:15] Information: Switching of example completed
+[22.06.2024 0:07:15] Information: Example resolving started
+[22.06.2024 0:07:15] Information: Source secondary rectangles count: 5
+[22.06.2024 0:07:15] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:07:15] Information: Source points count: 20
+[22.06.2024 0:07:15] Information: Filtered points count: 14
+[22.06.2024 0:07:15] Information: Example resolving completed
+[22.06.2024 0:07:15] Information: Drawing of the solution started
+[22.06.2024 0:07:15] Information: Drawing of the solution completed
+[22.06.2024 0:07:16] Information: Application is shutting down
+[22.06.2024 0:08:33] Information: Application started
+[22.06.2024 0:08:33] Information: Loading of examples started
+[22.06.2024 0:08:34] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_0.json read successfully
+[22.06.2024 0:08:34] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_1.json read successfully
+[22.06.2024 0:08:34] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_2.json read successfully
+[22.06.2024 0:08:34] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_3.json read successfully
+[22.06.2024 0:08:34] Information: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_4.json read successfully
+[22.06.2024 0:08:34] Warning: File D:\Documents\Reposes\RectanglesTask\Work\Examples\ex_5.json is corrupted
+[22.06.2024 0:08:34] Information: Loading of examples completed
+[22.06.2024 0:08:34] Information: Drawing of the example started
+[22.06.2024 0:08:34] Information: Drawing of the example completed
+[22.06.2024 0:08:35] Information: Example resolving started
+[22.06.2024 0:08:35] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:35] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:08:35] Information: Source points count: 20
+[22.06.2024 0:08:35] Information: Filtered points count: 20
+[22.06.2024 0:08:35] Information: Example resolving completed
+[22.06.2024 0:08:35] Information: Drawing of the solution started
+[22.06.2024 0:08:35] Information: Drawing of the solution completed
+[22.06.2024 0:08:36] Information: Switching of example started
+[22.06.2024 0:08:36] Information: Drawing of the example completed
+[22.06.2024 0:08:36] Information: Switching of example completed
+[22.06.2024 0:08:36] Information: Example resolving started
+[22.06.2024 0:08:36] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:36] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:08:36] Information: Source points count: 20
+[22.06.2024 0:08:36] Information: Filtered points count: 20
+[22.06.2024 0:08:36] Information: Example resolving completed
+[22.06.2024 0:08:36] Information: Drawing of the solution started
+[22.06.2024 0:08:36] Information: Drawing of the solution completed
+[22.06.2024 0:08:37] Information: Switching of example started
+[22.06.2024 0:08:37] Information: Drawing of the example started
+[22.06.2024 0:08:37] Information: Drawing of the example completed
+[22.06.2024 0:08:37] Information: Switching of example completed
+[22.06.2024 0:08:37] Information: Example resolving started
+[22.06.2024 0:08:37] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:37] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:08:37] Information: Source points count: 20
+[22.06.2024 0:08:37] Information: Filtered points count: 20
+[22.06.2024 0:08:37] Information: Example resolving completed
+[22.06.2024 0:08:37] Information: Drawing of the solution started
+[22.06.2024 0:08:37] Information: Drawing of the solution completed
+[22.06.2024 0:08:38] Information: Switching of example started
+[22.06.2024 0:08:38] Information: Drawing of the example started
+[22.06.2024 0:08:38] Information: Drawing of the example completed
+[22.06.2024 0:08:38] Information: Switching of example completed
+[22.06.2024 0:08:38] Information: Example resolving started
+[22.06.2024 0:08:38] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:38] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:08:38] Information: Source points count: 20
+[22.06.2024 0:08:38] Information: Filtered points count: 20
+[22.06.2024 0:08:38] Information: Example resolving completed
+[22.06.2024 0:08:38] Information: Drawing of the solution started
+[22.06.2024 0:08:38] Information: Drawing of the solution completed
+[22.06.2024 0:08:38] Information: Switching of example started
+[22.06.2024 0:08:38] Information: Drawing of the example started
+[22.06.2024 0:08:38] Information: Drawing of the example completed
+[22.06.2024 0:08:38] Information: Switching of example completed
+[22.06.2024 0:08:39] Information: Example resolving started
+[22.06.2024 0:08:39] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:39] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:08:39] Information: Source points count: 20
+[22.06.2024 0:08:39] Information: Filtered points count: 14
+[22.06.2024 0:08:39] Information: Example resolving completed
+[22.06.2024 0:08:39] Information: Drawing of the solution started
+[22.06.2024 0:08:39] Information: Drawing of the solution completed
+[22.06.2024 0:08:40] Information: Switching of example started
+[22.06.2024 0:08:40] Information: Drawing of the example started
+[22.06.2024 0:08:40] Information: Drawing of the example completed
+[22.06.2024 0:08:40] Information: Switching of example completed
+[22.06.2024 0:08:40] Information: Example resolving started
+[22.06.2024 0:08:40] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:40] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:40] Information: Source points count: 12
+[22.06.2024 0:08:40] Information: Filtered points count: 12
+[22.06.2024 0:08:40] Information: Example resolving completed
+[22.06.2024 0:08:40] Information: Drawing of the solution started
+[22.06.2024 0:08:40] Information: Drawing of the solution completed
+[22.06.2024 0:08:42] Information: Switching of example started
+[22.06.2024 0:08:42] Information: Drawing of the example started
+[22.06.2024 0:08:42] Information: Drawing of the example completed
+[22.06.2024 0:08:42] Information: Switching of example completed
+[22.06.2024 0:08:43] Information: Example resolving started
+[22.06.2024 0:08:43] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:43] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:43] Information: Source points count: 12
+[22.06.2024 0:08:43] Information: Filtered points count: 10
+[22.06.2024 0:08:43] Information: Example resolving completed
+[22.06.2024 0:08:43] Information: Drawing of the solution started
+[22.06.2024 0:08:43] Information: Drawing of the solution completed
+[22.06.2024 0:08:44] Information: Switching of example started
+[22.06.2024 0:08:44] Information: Drawing of the example started
+[22.06.2024 0:08:44] Information: Drawing of the example completed
+[22.06.2024 0:08:44] Information: Switching of example completed
+[22.06.2024 0:08:44] Information: Example resolving started
+[22.06.2024 0:08:44] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:44] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:44] Information: Source points count: 12
+[22.06.2024 0:08:44] Information: Filtered points count: 12
+[22.06.2024 0:08:44] Information: Example resolving completed
+[22.06.2024 0:08:44] Information: Drawing of the solution started
+[22.06.2024 0:08:44] Information: Drawing of the solution completed
+[22.06.2024 0:08:45] Information: Switching of example started
+[22.06.2024 0:08:45] Information: Drawing of the example started
+[22.06.2024 0:08:45] Information: Drawing of the example completed
+[22.06.2024 0:08:45] Information: Switching of example completed
+[22.06.2024 0:08:45] Information: Example resolving started
+[22.06.2024 0:08:45] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:45] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:45] Information: Source points count: 12
+[22.06.2024 0:08:45] Information: Filtered points count: 10
+[22.06.2024 0:08:45] Information: Example resolving completed
+[22.06.2024 0:08:45] Information: Drawing of the solution started
+[22.06.2024 0:08:45] Information: Drawing of the solution completed
+[22.06.2024 0:08:46] Information: Switching of example started
+[22.06.2024 0:08:46] Information: Drawing of the example started
+[22.06.2024 0:08:46] Information: Drawing of the example completed
+[22.06.2024 0:08:46] Information: Switching of example completed
+[22.06.2024 0:08:47] Information: Example resolving started
+[22.06.2024 0:08:47] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:47] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:47] Information: Source points count: 12
+[22.06.2024 0:08:47] Information: Filtered points count: 12
+[22.06.2024 0:08:47] Information: Example resolving completed
+[22.06.2024 0:08:47] Information: Drawing of the solution started
+[22.06.2024 0:08:47] Information: Drawing of the solution completed
+[22.06.2024 0:08:48] Information: Switching of example started
+[22.06.2024 0:08:48] Information: Drawing of the example started
+[22.06.2024 0:08:48] Information: Drawing of the example completed
+[22.06.2024 0:08:48] Information: Switching of example completed
+[22.06.2024 0:08:48] Information: Example resolving started
+[22.06.2024 0:08:48] Information: Source secondary rectangles count: 5
+[22.06.2024 0:08:48] Information: Filtered secondary rectangles count: 3
+[22.06.2024 0:08:48] Information: Source points count: 12
+[22.06.2024 0:08:48] Information: Filtered points count: 10
+[22.06.2024 0:08:48] Information: Example resolving completed
+[22.06.2024 0:08:48] Information: Drawing of the solution started
+[22.06.2024 0:08:48] Information: Drawing of the solution completed
+[22.06.2024 0:08:54] Information: Switching of example started
+[22.06.2024 0:08:54] Information: Drawing of the example started
+[22.06.2024 0:08:54] Information: Drawing of the example completed
+[22.06.2024 0:08:54] Information: Switching of example completed
+[22.06.2024 0:08:55] Information: Example resolving started
+[22.06.2024 0:08:55] Information: Source secondary rectangles count: 0
+[22.06.2024 0:08:55] Information: Drawing of the solution started
+[22.06.2024 0:08:55] Information: Drawing of the solution completed
+[22.06.2024 0:08:55] Information: Switching of example started
+[22.06.2024 0:08:55] Information: Drawing of the example started
+[22.06.2024 0:08:55] Information: Drawing of the example completed
+[22.06.2024 0:08:55] Information: Switching of example completed
+[22.06.2024 0:08:56] Information: Switching of example started
+[22.06.2024 0:08:56] Information: Drawing of the example started
+[22.06.2024 0:08:56] Information: Drawing of the example completed
+[22.06.2024 0:08:56] Information: Switching of example completed
+[22.06.2024 0:08:56] Information: Switching of example started
+[22.06.2024 0:08:56] Information: Drawing of the example started
+[22.06.2024 0:08:56] Information: Drawing of the example completed
+[22.06.2024 0:08:56] Information: Switching of example completed
+[22.06.2024 0:08:56] Information: Switching of example started
+[22.06.2024 0:08:56] Information: Drawing of the example started
+[22.06.2024 0:08:56] Information: Drawing of the example completed
+[22.06.2024 0:08:56] Information: Switching of example completed
+[22.06.2024 0:08:56] Information: Switching of example started
+[22.06.2024 0:08:56] Information: Drawing of the example started
+[22.06.2024 0:08:56] Information: Drawing of the example completed
+[22.06.2024 0:08:56] Information: Switching of example completed
+[22.06.2024 0:08:56] Information: Switching of example started
+[22.06.2024 0:08:56] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Drawing of the example started
+[22.06.2024 0:08:57] Information: Drawing of the example completed
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Drawing of the example started
+[22.06.2024 0:08:57] Information: Drawing of the example completed
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Drawing of the example started
+[22.06.2024 0:08:57] Information: Drawing of the example completed
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Drawing of the example started
+[22.06.2024 0:08:57] Information: Drawing of the example completed
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:57] Information: Switching of example started
+[22.06.2024 0:08:57] Information: Drawing of the example started
+[22.06.2024 0:08:57] Information: Drawing of the example completed
+[22.06.2024 0:08:57] Information: Switching of example completed
+[22.06.2024 0:08:58] Information: Switching of example started
+[22.06.2024 0:08:58] Information: Switching of example completed
+[22.06.2024 0:08:58] Information: Switching of example started
+[22.06.2024 0:08:58] Information: Switching of example completed
+[22.06.2024 0:08:58] Information: Switching of example started
+[22.06.2024 0:08:58] Information: Drawing of the example started
+[22.06.2024 0:08:58] Information: Drawing of the example completed
+[22.06.2024 0:08:58] Information: Switching of example completed
+[22.06.2024 0:08:58] Information: Switching of example started
+[22.06.2024 0:08:58] Information: Drawing of the example started
+[22.06.2024 0:08:58] Information: Drawing of the example completed
+[22.06.2024 0:08:58] Information: Switching of example completed
+[22.06.2024 0:08:58] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:08:59] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:08:59] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:08:59] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:08:59] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:08:59] Information: Switching of example started
+[22.06.2024 0:08:59] Information: Drawing of the example started
+[22.06.2024 0:08:59] Information: Drawing of the example completed
+[22.06.2024 0:08:59] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Drawing of the example started
+[22.06.2024 0:09:00] Information: Drawing of the example completed
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Drawing of the example started
+[22.06.2024 0:09:00] Information: Drawing of the example completed
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Drawing of the example started
+[22.06.2024 0:09:00] Information: Drawing of the example completed
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Drawing of the example started
+[22.06.2024 0:09:00] Information: Drawing of the example completed
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:00] Information: Switching of example started
+[22.06.2024 0:09:00] Information: Drawing of the example started
+[22.06.2024 0:09:00] Information: Drawing of the example completed
+[22.06.2024 0:09:00] Information: Switching of example completed
+[22.06.2024 0:09:01] Information: Switching of example started
+[22.06.2024 0:09:01] Information: Drawing of the example started
+[22.06.2024 0:09:01] Information: Drawing of the example completed
+[22.06.2024 0:09:01] Information: Switching of example completed
+[22.06.2024 0:09:01] Information: Switching of example started
+[22.06.2024 0:09:01] Information: Drawing of the example started
+[22.06.2024 0:09:01] Information: Drawing of the example completed
+[22.06.2024 0:09:01] Information: Switching of example completed
+[22.06.2024 0:09:01] Information: Example resolving started
+[22.06.2024 0:09:01] Information: Source secondary rectangles count: 5
+[22.06.2024 0:09:01] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:09:01] Information: Source points count: 20
+[22.06.2024 0:09:01] Information: Filtered points count: 14
+[22.06.2024 0:09:01] Information: Example resolving completed
+[22.06.2024 0:09:01] Information: Drawing of the solution started
+[22.06.2024 0:09:01] Information: Drawing of the solution completed
+[22.06.2024 0:09:02] Information: Example resolving started
+[22.06.2024 0:09:02] Information: Source secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Source points count: 20
+[22.06.2024 0:09:02] Information: Filtered points count: 14
+[22.06.2024 0:09:02] Information: Example resolving completed
+[22.06.2024 0:09:02] Information: Drawing of the solution started
+[22.06.2024 0:09:02] Information: Drawing of the solution completed
+[22.06.2024 0:09:02] Information: Example resolving started
+[22.06.2024 0:09:02] Information: Source secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Source points count: 20
+[22.06.2024 0:09:02] Information: Filtered points count: 14
+[22.06.2024 0:09:02] Information: Example resolving completed
+[22.06.2024 0:09:02] Information: Drawing of the solution started
+[22.06.2024 0:09:02] Information: Drawing of the solution completed
+[22.06.2024 0:09:02] Information: Example resolving started
+[22.06.2024 0:09:02] Information: Source secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Filtered secondary rectangles count: 5
+[22.06.2024 0:09:02] Information: Source points count: 20
+[22.06.2024 0:09:02] Information: Filtered points count: 14
+[22.06.2024 0:09:02] Information: Example resolving completed
+[22.06.2024 0:09:02] Information: Drawing of the solution started
+[22.06.2024 0:09:02] Information: Drawing of the solution completed
+[22.06.2024 0:09:02] Information: Application is shutting down
