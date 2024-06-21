@@ -34,7 +34,16 @@ namespace Core.Services
                 try
                 {
                     string jsonNotation = await File.ReadAllTextAsync(file.FullName);
-                    examples.Add(JsonConvert.DeserializeObject<Blueprint>(jsonNotation));
+
+                    if (string.IsNullOrWhiteSpace(jsonNotation) || jsonNotation == string.Empty)
+                    {
+                        examples.Add(new Blueprint(true));
+                    }
+                    else
+                    {
+                        Blueprint example = JsonConvert.DeserializeObject<Blueprint>(jsonNotation) ?? new Blueprint(true);
+                        examples.Add(example);
+                    }
                 }
                 catch (Exception ex)
                 {
