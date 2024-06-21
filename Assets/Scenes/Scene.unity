@@ -183,10 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10fe71049714786bc0b8d8d2907c50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _primaryRectanglePrefab: {fileID: 2403616829875602102, guid: 41d67e4bc82a88e488db2a5c85b31109, type: 3}
-  _secondaryRectanglePrefab: {fileID: 2403616829875602102, guid: 110ef164ae0251a4a8ad11cc92edb42a, type: 3}
   _sourceArea: {fileID: 1086006571}
   _resultArea: {fileID: 1143830434}
+  _rectangleConfig: {fileID: 11400000, guid: bafe2e155dbeccf4a9fe3710872fb314, type: 2}
 --- !u!114 &103871104
 MonoBehaviour:
   m_ObjectHideFlags: 0

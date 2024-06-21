@@ -1,14 +1,14 @@
 ﻿using Core.Models;
 using UnityEngine;
+using Visual.Extensions;
 
 namespace Visual
 {
     public class Drawer : MonoBehaviour
     {
-        [SerializeField] private RectangleView _primaryRectanglePrefab;
-        [SerializeField] private RectangleView _secondaryRectanglePrefab;
         [SerializeField] private Transform _sourceArea;
         [SerializeField] private Transform _resultArea;
+        [SerializeField] private RectangleConfig _rectangleConfig;
         
         public void DrawBlueprint(Blueprint blueprint)
         {
@@ -29,8 +29,8 @@ namespace Visual
 
         private void DrawPrimaryRectangle(Blueprint blueprint)
         {
-            Instantiate<RectangleView>(_primaryRectanglePrefab, GetArea(blueprint.Type), false)
-                .Initialize(blueprint.PrimaryRectangle);
+            Instantiate<RectangleView>(_rectangleConfig.PrimaryRectanglePrefab, GetArea(blueprint.Type), false)
+                .Initialize(blueprint.PrimaryRectangle.ToUniRect());
         }
 
         private void DrawSecondaryRectangles(Blueprint blueprint)
@@ -39,7 +39,9 @@ namespace Visual
             
             foreach (var rectangle in blueprint.SecondaryRectangles)
             {
-                Instantiate<RectangleView>(_secondaryRectanglePrefab, area, false).Initialize(rectangle);
+                Instantiate<RectangleView>(_rectangleConfig.SecondaryRectanglePrefab, area, false)
+                    .Initialize(rectangle.ToUniRect())
+                    .SetColor(_rectangleConfig.GetColorByType(rectangle.ColorType));
             }
         }
 

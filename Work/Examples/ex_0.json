@@ -1,0 +1,68 @@
+{
+    "_resolveSettings": {
+      "ExcludeOuterPoints": false,
+      "Later": false
+    },
+	"PrimaryRectangle": {
+      "Start": {
+        "X": -400,
+        "Y": -390
+      },
+      "End": {
+        "X": 400,
+        "Y": 390
+      }
+    },
+    "_secondaryRectangles": [
+      {
+        "Start": {
+          "X": -250,
+          "Y": 50
+        },
+        "End": {
+          "X": 250,
+          "Y": 300
+        }
+      },
+      {
+        "Start": {
+          "X": -300,
+          "Y": -50
+        },
+        "End": {
+          "X": -100,
+          "Y": 200
+        }
+      },
+	  {
+        "Start": {
+          "X": 150,
+		  "Y": -100
+        },
+        "End": {
+          "X": 350,
+          "Y": 150
+        }
+      },
+      {
+        "Start": {
+          "X": -270,
+          "Y": 0
+        },
+        "End": {
+          "X": 25,
+          "Y": -300
+        }
+      },
+      {	  
+        "Start": {
+          "X": -200,
+          "Y": -100
+        },
+        "End": {
+          "X": 100,
+          "Y": -370
+        }
+      }
+    ]
+ }

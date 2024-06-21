@@ -1,17 +1,24 @@
-﻿using Core.Models;
-using UnityEngine;
-using Visual.Extensions;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace Visual
 {
     public class RectangleView : MonoBehaviour
     {
-        public RectangleView Initialize(Rectangle rectangle)
+        [SerializeField] 
+        private Image _image;
+        
+        public RectangleView Initialize(Rect rectangle)
         {
             RectTransform rectTransform = (RectTransform)transform;
-            Rect uniRect = rectangle.ToUniRect();
-            rectTransform.anchoredPosition = uniRect.position;
-            rectTransform.sizeDelta = uniRect.size;
+            rectTransform.anchoredPosition = rectangle.position;
+            rectTransform.sizeDelta = rectangle.size;
+            return this;
+        }
+        
+        public RectangleView SetColor(Color color)
+        {
+            _image.color = color;
             return this;
         }
     }

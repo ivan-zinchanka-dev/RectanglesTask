@@ -10,8 +10,10 @@ namespace Core.Models
     {
         [JsonProperty] private ResolveSettings _resolveSettings;
         public Rectangle PrimaryRectangle { get; private set; }
-        [JsonProperty] private List<Rectangle> _secondaryRectangles = new List<Rectangle>();
-        [JsonIgnore] public List<Rectangle> SecondaryRectangles => new List<Rectangle>(_secondaryRectangles);
+        [JsonProperty] 
+        private List<Rectangle> _secondaryRectangles = new List<Rectangle>();
+        [JsonIgnore] 
+        public List<Rectangle> SecondaryRectangles => new List<Rectangle>(_secondaryRectangles);
 
         private readonly BlueprintType _type = BlueprintType.Example;
         public BlueprintType Type => _type;
@@ -33,7 +35,7 @@ namespace Core.Models
 
             List<Rectangle> filteredSecondaries = new List<Rectangle>(_secondaryRectangles);
 
-            /*if (_resolveSettings.ExcludeOuterPoints)              // by Color
+            /*if (_resolveSettings.ExcludeByColors.Count > 0)
             {
                 filteredSecondaries.RemoveAll(secondary =>
                 {
@@ -67,7 +69,9 @@ namespace Core.Models
             
             //Rectangle newPrimary = (Rectangle)filteredSecondaries[0].Clone();
 
-            Rectangle newPrimary = new Rectangle((Point)points[0].Clone(), (Point)points[1].Clone());
+            Rectangle newPrimary = new Rectangle(PrimaryRectangle.ColorType, 
+                (Point)points[0].Clone(), 
+                (Point)points[1].Clone());
             
             
             foreach (var point in points)

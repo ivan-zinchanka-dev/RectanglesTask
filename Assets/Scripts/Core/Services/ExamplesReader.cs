@@ -27,16 +27,35 @@ namespace Core.Services
 
         public async Task<List<Blueprint>> ReadExamplesAsync()
         {
-            string fullExamplesFileName = Path.Combine(_examplesDirectory.FullName, ExamplesFileName);
+            List<Blueprint> examples = new List<Blueprint>();
+            
+            var files = _examplesDirectory.GetFiles("*.json");
+
+            foreach (var file in files)
+            {
+                try
+                {
+                    string jsonNotation = await File.ReadAllTextAsync(file.FullName);
+                    examples.Add(JsonConvert.DeserializeObject<Blueprint>(jsonNotation));
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogException(ex);
+                    Debug.LogException(new Exception($"File {file.FullName} is incorrect or corrupted"));
+                }
+            }
+            
+            
+            /*string fullExamplesFileName = Path.Combine(_examplesDirectory.FullName, ExamplesFileName);
             
             if (!File.Exists(fullExamplesFileName))
             {
                 Debug.LogException(new Exception("Examples file not found"));
-            }
+            }*/
 
-            List<Blueprint> examples = new List<Blueprint>();
             
-            try
+            
+            /*try
             {
                 string jsonNotation = await File.ReadAllTextAsync(fullExamplesFileName);
                 examples = JsonConvert.DeserializeObject<List<Blueprint>>(jsonNotation);
@@ -45,7 +64,7 @@ namespace Core.Services
             {
                 Debug.LogException(ex);
                 Debug.LogException(new Exception("examples.json is incorrect or corrupted"));
-            }
+            }*/
 
             return examples;
         }
