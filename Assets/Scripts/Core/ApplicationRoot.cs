@@ -20,6 +20,8 @@ namespace Core
         private Drawer _drawer;
         [SerializeField] 
         private TextMeshProUGUI _exampleTextMesh;
+        [SerializeField] 
+        private GameObject _noExamplesErrorMessage;
         
         private ExamplesReader _examplesReader;
         private Logger _logger;
@@ -33,13 +35,22 @@ namespace Core
             
             _examplesReader = new ExamplesReader(_appConfig.ExamplesFolderPath);
             _blueprints = await _examplesReader.ReadExamplesAsync();
+
+            if (_blueprints.Count == 0)
+            {
+                Debug.LogError("Examples folder is empty");
+                _noExamplesErrorMessage.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("Drawing of the example started");
             
-            Debug.Log("Drawing of the example started");
+                _exampleTextMesh.SetText($"Example: {_currentBlueprintIndex}");
+                _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
             
-            _exampleTextMesh.SetText($"Example: {_currentBlueprintIndex}");
-            _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
+                Debug.Log("Drawing of the example completed");
+            }
             
-            Debug.Log("Drawing of the example completed");
         }
         
         private void OnEnable()
@@ -50,6 +61,11 @@ namespace Core
 
         private void Resolve()
         {
+            if (_blueprints.Count == 0)
+            {
+                return;
+            }
+            
             Blueprint solution = _blueprints[_currentBlueprintIndex].Resolve();
             
             Debug.Log("Drawing of the solution started");
@@ -62,6 +78,11 @@ namespace Core
 
         private void SwitchBlueprint(int direction)
         {
+            if (_blueprints.Count == 0)
+            {
+                return;
+            }
+
             Debug.Log("Switching of example started");
             
             int previousBlueprintIndex = _currentBlueprintIndex; 
