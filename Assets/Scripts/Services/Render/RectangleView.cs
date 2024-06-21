@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Visual
+namespace Services.Render
 {
     public class RectangleView : MonoBehaviour
     {

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using Controls;
-using Core.Models;
-using Core.Services;
+using Models;
+using Services;
+using Services.Render;
 using TMPro;
 using UnityEngine;
-using Logger = Core.Services.Logger;
+using Logger = Services.Logger;
 
-namespace Visual
+namespace Core
 {
     public class ApplicationRoot : MonoBehaviour
     {

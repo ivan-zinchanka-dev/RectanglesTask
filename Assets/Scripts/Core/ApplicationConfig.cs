@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Visual
+namespace Core
 {
     [CreateAssetMenu(fileName = "application_config", menuName = "Configs/ApplicationConfig", order = 0)]
     public class ApplicationConfig : ScriptableObject

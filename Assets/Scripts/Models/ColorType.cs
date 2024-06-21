@@ -1,4 +1,4 @@
-﻿namespace Core.Models
+﻿namespace Models
 {
     public enum ColorType
     {

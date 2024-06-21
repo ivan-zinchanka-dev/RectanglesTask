@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using Newtonsoft.Json;
 
-namespace Core.Models
+namespace Models
 {
     public class Rectangle : ICloneable
     {

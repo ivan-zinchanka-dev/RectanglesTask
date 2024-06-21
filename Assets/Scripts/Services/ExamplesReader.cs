@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using Core.Models;
+using Models;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Core.Services
+namespace Services
 {
     public class ExamplesReader
     {

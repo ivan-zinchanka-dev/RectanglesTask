@@ -2,7 +2,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace Core.Services
+namespace Services
 {
     public class Logger : IDisposable
     {

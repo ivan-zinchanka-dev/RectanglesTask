@@ -1,7 +1,7 @@
-﻿using Core.Models;
+﻿using Models;
 using UnityEngine;
 
-namespace Visual.Extensions
+namespace Extensions
 {
     public static class UnityStructsExtensions
     {

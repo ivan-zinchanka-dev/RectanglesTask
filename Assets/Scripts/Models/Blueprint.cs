@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace Core.Models
+namespace Models
 {
     public class Blueprint : ICloneable
     {

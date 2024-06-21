@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Visual.Models
+namespace Services.Render
 {
     [Serializable]
     public struct Pair<T1, T2>

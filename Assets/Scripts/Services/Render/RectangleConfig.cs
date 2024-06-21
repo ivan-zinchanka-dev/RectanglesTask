@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
-using Core.Models;
+using Models;
 using UnityEngine;
-using Visual.Models;
 
-namespace Visual
+namespace Services.Render
 {
     [CreateAssetMenu(fileName = "rectangle_config", menuName = "Configs/RectangleConfig", order = 0)]
     public class RectangleConfig : ScriptableObject

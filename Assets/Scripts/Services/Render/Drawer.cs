@@ -1,8 +1,8 @@
-﻿using Core.Models;
+﻿using Extensions;
+using Models;
 using UnityEngine;
-using Visual.Extensions;
 
-namespace Visual
+namespace Services.Render
 {
     public class Drawer : MonoBehaviour
     {

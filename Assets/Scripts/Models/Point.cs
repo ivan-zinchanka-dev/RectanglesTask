@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Core.Models
+namespace Models
 {
     public class Point : ICloneable
     {
