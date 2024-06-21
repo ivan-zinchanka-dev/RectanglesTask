@@ -2,11 +2,11 @@
 	"PrimaryRectangle": {
       "Start": {
         "X": -400,
-        "Y": -390
+        "Y": -400
       },
       "End": {
         "X": 400,
-        "Y": 390
+        "Y": 340
       }
     },
     "_secondaryRectangles": [
