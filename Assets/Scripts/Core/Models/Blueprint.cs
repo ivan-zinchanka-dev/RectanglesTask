@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using Newtonsoft.Json;
+using UnityEngine;
 
 namespace Core.Models
 {
@@ -50,10 +51,14 @@ namespace Core.Models
 
             List<Point> points = ToPointList(filteredSecondaries);
 
+            Debug.Log("Source count: " + points.Count);
+            
             if (_resolveSettings.ExcludeOuterPoints)
             {
                 points.RemoveAll(IsOuterPoint);
             }
+            
+            Debug.Log("Filtered count: " + points.Count);
             
             if (points.Count < 2)
             {
@@ -107,6 +112,8 @@ namespace Core.Models
             {
                 points.Add(rectangle.Start);
                 points.Add(rectangle.End);
+                points.Add(new Point(rectangle.Start.X, rectangle.End.Y));
+                points.Add(new Point(rectangle.End.X, rectangle.Start.Y));
             }
 
             return points;
