@@ -11,8 +11,6 @@ namespace Core.Services
     public class ExamplesReader
     {
         private const string ExamplesFolderName = @".\Work\Examples";
-        private const string ExamplesFileName = "examples.json";
-        
         private readonly DirectoryInfo _examplesDirectory;
         
         public ExamplesReader()
@@ -27,10 +25,10 @@ namespace Core.Services
 
         public async Task<List<Blueprint>> ReadExamplesAsync()
         {
-            List<Blueprint> examples = new List<Blueprint>();
-            
             var files = _examplesDirectory.GetFiles("*.json");
 
+            List<Blueprint> examples = new List<Blueprint>(files.Length);
+            
             foreach (var file in files)
             {
                 try
@@ -45,27 +43,6 @@ namespace Core.Services
                 }
             }
             
-            
-            /*string fullExamplesFileName = Path.Combine(_examplesDirectory.FullName, ExamplesFileName);
-            
-            if (!File.Exists(fullExamplesFileName))
-            {
-                Debug.LogException(new Exception("Examples file not found"));
-            }*/
-
-            
-            
-            /*try
-            {
-                string jsonNotation = await File.ReadAllTextAsync(fullExamplesFileName);
-                examples = JsonConvert.DeserializeObject<List<Blueprint>>(jsonNotation);
-            }
-            catch (Exception ex)
-            {
-                Debug.LogException(ex);
-                Debug.LogException(new Exception("examples.json is incorrect or corrupted"));
-            }*/
-
             return examples;
         }
     }

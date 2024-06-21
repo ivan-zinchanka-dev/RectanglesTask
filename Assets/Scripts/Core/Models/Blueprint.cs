@@ -35,16 +35,13 @@ namespace Core.Models
 
             List<Rectangle> filteredSecondaries = new List<Rectangle>(_secondaryRectangles);
 
-            /*if (_resolveSettings.ExcludeByColors.Count > 0)
+            var includedColors = _resolveSettings.IncludedColors;
+            
+            if (includedColors != null && includedColors.Count > 0)
             {
                 filteredSecondaries.RemoveAll(secondary =>
-                {
-                    return secondary.MinX < PrimaryRectangle.MinX
-                           || secondary.MinY < PrimaryRectangle.MinY
-                           || secondary.MaxX > PrimaryRectangle.MaxX
-                           || secondary.MaxY > PrimaryRectangle.MaxY;
-                });
-            }*/
+                    !includedColors.Contains(secondary.ColorType));
+            }
             
             if (filteredSecondaries.Count == 0)
             {
@@ -67,8 +64,6 @@ namespace Core.Models
                 return CloneInternal(BlueprintType.Solution);
             }
             
-            //Rectangle newPrimary = (Rectangle)filteredSecondaries[0].Clone();
-
             Rectangle newPrimary = new Rectangle(PrimaryRectangle.ColorType, 
                 (Point)points[0].Clone(), 
                 (Point)points[1].Clone());
@@ -82,24 +77,14 @@ namespace Core.Models
                 newPrimary.End.Y = Math.Max(newPrimary.End.Y, point.Y);
             }
             
-            
-            /*Rectangle newPrimary = (Rectangle)filteredSecondaries[0].Clone();
-
-            foreach (var secondary in filteredSecondaries)
-            {
-                newPrimary.Start.X = Math.Min(newPrimary.Start.X, secondary.MinX);
-                newPrimary.Start.Y = Math.Max(newPrimary.Start.Y, secondary.MaxY);
-                newPrimary.End.X = Math.Max(newPrimary.End.X, secondary.MaxX);
-                newPrimary.End.Y = Math.Min(newPrimary.End.Y, secondary.MinY);
-            }*/
-            
-            
             Blueprint solution = CloneInternal(BlueprintType.Solution);
             solution.PrimaryRectangle = newPrimary;
             
             return solution;
         }
 
+        
+        
         private bool IsOuterPoint(Point point)
         {
             return point.X < PrimaryRectangle.MinX || 

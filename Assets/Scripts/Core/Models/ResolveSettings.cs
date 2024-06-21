@@ -5,6 +5,6 @@ namespace Core.Models
     public struct ResolveSettings
     {
         public bool ExcludeOuterPoints { get; set; }
-        public List<ColorType> ExcludeByColors { get; set; }
+        public List<ColorType> IncludedColors { get; set; }
     }
 }

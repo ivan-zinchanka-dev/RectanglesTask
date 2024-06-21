@@ -1,7 +1,7 @@
 {
     "_resolveSettings": {
       "ExcludeOuterPoints": false,
-      "Later": false
+      "IncludedColors": ["Purple", "Pink"]
     },
 	"PrimaryRectangle": {
       "Start": {
@@ -9,7 +9,7 @@
         "Y": -390
       },
       "End": {
-        "X": 400,
+        "X": 300,
         "Y": 390
       }
     },
