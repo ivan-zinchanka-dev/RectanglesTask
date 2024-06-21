@@ -40,6 +40,8 @@ namespace Core.Services
                 {
                     Debug.LogException(ex);
                     Debug.LogException(new Exception($"File {file.FullName} is incorrect or corrupted"));
+                    
+                    examples.Add(new Blueprint(true));
                 }
             }
             

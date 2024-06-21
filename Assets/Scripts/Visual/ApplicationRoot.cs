@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Controls;
 using Core.Models;
 using Core.Services;
+using TMPro;
 using UnityEngine;
 
 namespace Visual
 {
     public class ApplicationRoot : MonoBehaviour
     {
+        [SerializeField] private TextMeshProUGUI _exampleTextMesh;
         [SerializeField] private Drawer _drawer;
         [SerializeField] private InputManager _inputManager;
         
@@ -21,6 +23,7 @@ namespace Visual
             _examplesReader = new ExamplesReader();
             _blueprints = await _examplesReader.ReadExamplesAsync();
             
+            _exampleTextMesh.SetText($"Example: {_currentBlueprintIndex}");
             _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
         }
         
@@ -44,6 +47,7 @@ namespace Visual
 
             if (_currentBlueprintIndex != previousBlueprintIndex)
             {
+                _exampleTextMesh.SetText($"Example: {_currentBlueprintIndex}");
                 _drawer.ClearAllAreas();
                 _drawer.DrawBlueprint(_blueprints[_currentBlueprintIndex]);
             }

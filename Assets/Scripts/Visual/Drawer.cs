@@ -8,16 +8,25 @@ namespace Visual
     {
         [SerializeField] private Transform _sourceArea;
         [SerializeField] private Transform _resultArea;
+        [SerializeField] private GameObject _corruptedMessage;
         [SerializeField] private RectangleConfig _rectangleConfig;
         
         public void DrawBlueprint(Blueprint blueprint)
         {
-            DrawSecondaryRectangles(blueprint);
-            DrawPrimaryRectangle(blueprint);
+            if (blueprint.IsCorrupted)
+            {
+                _corruptedMessage.SetActive(true);
+            }
+            else
+            {
+                DrawSecondaryRectangles(blueprint);
+                DrawPrimaryRectangle(blueprint);
+            }
         }
 
         public void ClearAllAreas()
         {
+            _corruptedMessage.SetActive(false);
             ClearArea(_sourceArea);
             ClearArea(_resultArea);
         }

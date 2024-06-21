@@ -17,7 +17,15 @@ namespace Core.Models
 
         private readonly BlueprintType _type = BlueprintType.Example;
         public BlueprintType Type => _type;
-        
+
+        public bool IsCorrupted { get; }
+
+        public Blueprint(bool isCorrupted)
+        {
+            IsCorrupted = isCorrupted;
+        }
+
+        [JsonConstructor]
         public Blueprint(BlueprintType type, Rectangle primaryRectangle, List<Rectangle> secondaryRectangles)
         {
             _type = type;
@@ -28,7 +36,7 @@ namespace Core.Models
         [Pure]
         public Blueprint Resolve()
         {
-            if (_secondaryRectangles.Count == 0)
+            if (IsCorrupted || _secondaryRectangles.Count == 0)
             {
                 return CloneInternal(BlueprintType.Solution);
             }
@@ -109,6 +117,10 @@ namespace Core.Models
         }
 
         public object Clone() => CloneInternal(_type);
-        private Blueprint CloneInternal(BlueprintType type) => new(type, PrimaryRectangle, SecondaryRectangles);
+
+        private Blueprint CloneInternal(BlueprintType type)
+        {
+            return IsCorrupted ? new Blueprint(true) : new Blueprint(type, PrimaryRectangle, SecondaryRectangles);
+        } 
     }
 }
