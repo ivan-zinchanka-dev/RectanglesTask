@@ -36,11 +36,14 @@ namespace Core.Models
         [Pure]
         public Blueprint Resolve()
         {
+            Debug.Log("Example resolving started");
+            Debug.Log("Source secondary rectangles count: " + _secondaryRectangles.Count);
+            
             if (IsCorrupted || _secondaryRectangles.Count == 0)
             {
                 return CloneInternal(BlueprintType.Solution);
             }
-
+            
             List<Rectangle> filteredSecondaries = new List<Rectangle>(_secondaryRectangles);
 
             var includedColors = _resolveSettings.IncludedColors;
@@ -51,6 +54,8 @@ namespace Core.Models
                     !includedColors.Contains(secondary.ColorType));
             }
             
+            Debug.Log("Filtered secondary rectangles count: " + filteredSecondaries.Count);
+            
             if (filteredSecondaries.Count == 0)
             {
                 return CloneInternal(BlueprintType.Solution);
@@ -58,14 +63,14 @@ namespace Core.Models
 
             List<Point> points = ToPointList(filteredSecondaries);
 
-            Debug.Log("Source count: " + points.Count);
+            Debug.Log("Source points count: " + points.Count);
             
             if (_resolveSettings.ExcludeOuterPoints)
             {
                 points.RemoveAll(IsOuterPoint);
             }
             
-            Debug.Log("Filtered count: " + points.Count);
+            Debug.Log("Filtered points count: " + points.Count);
             
             if (points.Count < 2)
             {
@@ -76,7 +81,6 @@ namespace Core.Models
                 (Point)points[0].Clone(), 
                 (Point)points[1].Clone());
             
-            
             foreach (var point in points)
             {
                 newPrimary.Start.X = Math.Min(newPrimary.Start.X, point.X);
@@ -85,13 +89,13 @@ namespace Core.Models
                 newPrimary.End.Y = Math.Max(newPrimary.End.Y, point.Y);
             }
             
+            Debug.Log("Example resolving completed");
+            
             Blueprint solution = CloneInternal(BlueprintType.Solution);
             solution.PrimaryRectangle = newPrimary;
             
             return solution;
         }
-
-        
         
         private bool IsOuterPoint(Point point)
         {

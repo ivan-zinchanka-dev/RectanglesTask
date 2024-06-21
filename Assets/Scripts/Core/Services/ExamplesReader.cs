@@ -10,12 +10,11 @@ namespace Core.Services
 {
     public class ExamplesReader
     {
-        private const string ExamplesFolderName = @".\Work\Examples";
         private readonly DirectoryInfo _examplesDirectory;
         
-        public ExamplesReader()
+        public ExamplesReader(string examplesFolderName)
         {
-            _examplesDirectory = new DirectoryInfo(ExamplesFolderName);
+            _examplesDirectory = new DirectoryInfo(examplesFolderName);
 
             if (!_examplesDirectory.Exists)
             {
@@ -25,6 +24,8 @@ namespace Core.Services
 
         public async Task<List<Blueprint>> ReadExamplesAsync()
         {
+            Debug.Log($"Loading of examples started");
+            
             var files = _examplesDirectory.GetFiles("*.json");
 
             List<Blueprint> examples = new List<Blueprint>(files.Length);
@@ -61,7 +62,10 @@ namespace Core.Services
                     Debug.LogWarning($"File {file.FullName} is corrupted");
                     examples.Add(new Blueprint(true));
                 }
+                
             }
+            
+            Debug.Log($"Loading of examples completed");
             
             return examples;
         }

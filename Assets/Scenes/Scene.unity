@@ -289,9 +289,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df31131d32c4c5594f2c0a28a2c6d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _exampleTextMesh: {fileID: 558600561}
-  _drawer: {fileID: 103871103}
+  _appConfig: {fileID: 11400000, guid: d814b44254805b941b85eb3b5ba3cb5c, type: 2}
   _inputManager: {fileID: 103871104}
+  _drawer: {fileID: 103871103}
+  _exampleTextMesh: {fileID: 558600561}
 --- !u!4 &103871102
 Transform:
   m_ObjectHideFlags: 0

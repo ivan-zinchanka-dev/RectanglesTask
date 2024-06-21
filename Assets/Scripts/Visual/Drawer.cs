@@ -6,10 +6,14 @@ namespace Visual
 {
     public class Drawer : MonoBehaviour
     {
-        [SerializeField] private Transform _sourceArea;
-        [SerializeField] private Transform _resultArea;
-        [SerializeField] private GameObject _corruptedMessage;
-        [SerializeField] private RectangleConfig _rectangleConfig;
+        [SerializeField] 
+        private Transform _sourceArea;
+        [SerializeField] 
+        private Transform _resultArea;
+        [SerializeField] 
+        private GameObject _corruptedMessage;
+        [SerializeField] 
+        private RectangleConfig _rectangleConfig;
         
         public void DrawBlueprint(Blueprint blueprint)
         {
