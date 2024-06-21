@@ -1,16 +1,16 @@
 ﻿using System;
 using System.ComponentModel;
+using Models.Enums;
 using Newtonsoft.Json;
 
 namespace Models
 {
-    public class Rectangle : ICloneable
+    public struct Rectangle
     {
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)]
-        [DefaultValue(ColorType.Green)]
-        public ColorType ColorType { get; private set; }
-        public Point Start { get; set; }
-        public Point End { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)] [DefaultValue(ColorType.Green)]
+        public ColorType ColorType;
+        public Point Start;
+        public Point End;
         
         public double MinX => Math.Min(Start.X, End.X);
         public double MinY => Math.Min(Start.Y, End.Y);
@@ -23,11 +23,6 @@ namespace Models
             ColorType = colorType;
             Start = start;
             End = end;
-        }
-
-        public object Clone()
-        {
-            return new Rectangle(ColorType, (Point)Start.Clone(), (Point)End.Clone());
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using Models.Enums;
 using Newtonsoft.Json;
 using UnityEngine;
 
@@ -8,16 +9,16 @@ namespace Models
 {
     public class Blueprint : ICloneable
     {
+        [JsonIgnore]
+        public BlueprintType Type => _type;
         [JsonProperty] private ResolveSettings _resolveSettings;
         public Rectangle PrimaryRectangle { get; private set; }
         [JsonProperty] 
         private List<Rectangle> _secondaryRectangles = new List<Rectangle>();
         [JsonIgnore] 
         public List<Rectangle> SecondaryRectangles => new List<Rectangle>(_secondaryRectangles);
-
+        
         private readonly BlueprintType _type = BlueprintType.Example;
-        public BlueprintType Type => _type;
-
         public bool IsCorrupted { get; }
 
         public Blueprint(bool isCorrupted)
@@ -43,16 +44,8 @@ namespace Models
             {
                 return CloneInternal(BlueprintType.Solution);
             }
-            
-            List<Rectangle> filteredSecondaries = new List<Rectangle>(_secondaryRectangles);
 
-            var includedColors = _resolveSettings.IncludedColors;
-            
-            if (includedColors != null && includedColors.Count > 0)
-            {
-                filteredSecondaries.RemoveAll(secondary =>
-                    !includedColors.Contains(secondary.ColorType));
-            }
+            List<Rectangle> filteredSecondaries = FilterSecondaryRectangles();
             
             Debug.Log("Filtered secondary rectangles count: " + filteredSecondaries.Count);
             
@@ -76,10 +69,42 @@ namespace Models
             {
                 return CloneInternal(BlueprintType.Solution);
             }
+
+            Rectangle newPrimary = CreatePrimaryFromPoints(points);
             
-            Rectangle newPrimary = new Rectangle(PrimaryRectangle.ColorType, 
-                (Point)points[0].Clone(), 
-                (Point)points[1].Clone());
+            Debug.Log("Example resolving completed");
+            
+            Blueprint solution = CloneInternal(BlueprintType.Solution);
+            solution.PrimaryRectangle = newPrimary;
+            
+            return solution;
+        }
+        
+        public object Clone() => CloneInternal(_type);
+
+        private Blueprint CloneInternal(BlueprintType type)
+        {
+            return IsCorrupted ? new Blueprint(true) : new Blueprint(type, PrimaryRectangle, SecondaryRectangles);
+        } 
+        
+        private List<Rectangle> FilterSecondaryRectangles()
+        {
+            List<Rectangle> filteredSecondaries = new List<Rectangle>(_secondaryRectangles);
+
+            var includedColors = _resolveSettings.IncludedColors;
+            
+            if (includedColors != null && includedColors.Count > 0)
+            {
+                filteredSecondaries.RemoveAll(secondary =>
+                    !includedColors.Contains(secondary.ColorType));
+            }
+
+            return filteredSecondaries;
+        }
+
+        private Rectangle CreatePrimaryFromPoints(List<Point> points)
+        {
+            Rectangle newPrimary = new Rectangle(PrimaryRectangle.ColorType, points[0], points[1]);
             
             foreach (var point in points)
             {
@@ -88,13 +113,8 @@ namespace Models
                 newPrimary.End.X = Math.Max(newPrimary.End.X, point.X);
                 newPrimary.End.Y = Math.Max(newPrimary.End.Y, point.Y);
             }
-            
-            Debug.Log("Example resolving completed");
-            
-            Blueprint solution = CloneInternal(BlueprintType.Solution);
-            solution.PrimaryRectangle = newPrimary;
-            
-            return solution;
+
+            return newPrimary;
         }
         
         private bool IsOuterPoint(Point point)
@@ -119,12 +139,6 @@ namespace Models
 
             return points;
         }
-
-        public object Clone() => CloneInternal(_type);
-
-        private Blueprint CloneInternal(BlueprintType type)
-        {
-            return IsCorrupted ? new Blueprint(true) : new Blueprint(type, PrimaryRectangle, SecondaryRectangles);
-        } 
+        
     }
 }

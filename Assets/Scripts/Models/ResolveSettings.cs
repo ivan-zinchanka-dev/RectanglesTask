@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Models.Enums;
 
 namespace Models
 {
