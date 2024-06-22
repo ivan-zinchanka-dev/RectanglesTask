@@ -11,7 +11,8 @@ namespace Models
     {
         [JsonIgnore]
         public BlueprintType Type => _type;
-        [JsonProperty] private ResolveSettings _resolveSettings;
+        [JsonProperty] 
+        private ResolveSettings _resolveSettings;
         public Rectangle PrimaryRectangle { get; private set; }
         [JsonProperty] 
         private List<Rectangle> _secondaryRectangles = new List<Rectangle>();

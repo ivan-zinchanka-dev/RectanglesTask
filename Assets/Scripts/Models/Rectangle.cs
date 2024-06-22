@@ -7,7 +7,7 @@ namespace Models
 {
     public struct Rectangle
     {
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)] [DefaultValue(ColorType.Green)]
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate), DefaultValue(ColorType.Green)]
         public ColorType ColorType;
         public Point Start;
         public Point End;
