@@ -1,7 +1,7 @@
 {
     "_resolveSettings": {
       "ExcludeOuterPoints": false,
-      "IncludedColors": ["Purple", "Pink"]
+      "IncludedColors": ["Pink"]
     },
 	"PrimaryRectangle": {
       "Start": {
@@ -26,7 +26,7 @@
         }
       },
       {
-		"ColorType": "Purple",
+		"ColorType": "Pink",
         "Start": {
           "X": -300,
           "Y": -50
@@ -34,6 +34,28 @@
         "End": {
           "X": -100,
           "Y": 200
+        }
+      },
+	  {
+		"ColorType": "Green",
+        "Start": {
+          "X": -270,
+          "Y": 0
+        },
+        "End": {
+          "X": 25,
+          "Y": -300
+        }
+      },
+	  {
+		"ColorType": "Pink",		  
+        "Start": {
+          "X": -200,
+          "Y": -100
+        },
+        "End": {
+          "X": 100,
+          "Y": -370
         }
       },
 	  {
@@ -46,28 +68,7 @@
           "X": 350,
           "Y": 150
         }
-      },
-      {
-		"ColorType": "Green",
-        "Start": {
-          "X": -270,
-          "Y": 0
-        },
-        "End": {
-          "X": 25,
-          "Y": -300
-        }
-      },
-      {
-		"ColorType": "Purple",		  
-        "Start": {
-          "X": -200,
-          "Y": -100
-        },
-        "End": {
-          "X": 100,
-          "Y": -370
-        }
       }
+	  
     ]
  }
